@@ -1,0 +1,2 @@
+@E: CL123 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Logic for x[9:0] does not match a standard flip-flop
+

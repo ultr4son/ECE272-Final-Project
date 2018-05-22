@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject"  

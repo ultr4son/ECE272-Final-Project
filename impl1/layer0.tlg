@@ -1,0 +1,5 @@
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":1:0:1:6|Synthesizing module work_C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv_unit in library work.
+Selecting top level module game_fsm_state
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":2:7:2:20|Synthesizing module game_fsm_state in library work.
+@W: CG532 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":8:1:8:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+Error reading file dependency information in file .\layer0.fdep

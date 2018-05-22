@@ -1,0 +1,17 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MT206 |Auto Constrain mode is enabled
+@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Removing sequential instance game.player1.x[0] (in view: work.game(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Removing sequential instance game.ball.x[0] (in view: work.game(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Removing sequential instance game.ball.y[0] (in view: work.game(verilog)) because it does not drive other instances.
+@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Replicating instance game.ball.dy[1] (in view: work.game(verilog)) with 10 loads 1 time to improve timing.
+@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Replicating instance game.ball.dy[2] (in view: work.game(verilog)) with 8 loads 1 time to improve timing.
+@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Replicating instance game.player1.dx[2] (in view: work.game(verilog)) with 7 loads 1 time to improve timing.
+@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Replicating instance game.ball.dy[3] (in view: work.game(verilog)) with 7 loads 1 time to improve timing.
+@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Replicating instance game.ball.dy[4] (in view: work.game(verilog)) with 7 loads 1 time to improve timing.
+@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Replicating instance game.ball.dy[5] (in view: work.game(verilog)) with 7 loads 1 time to improve timing.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FX1056 |Writing EDF file: C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

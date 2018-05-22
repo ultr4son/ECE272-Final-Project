@@ -1,0 +1,10 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Removing sequential instance game.player1.x[0] (in view: work.game(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Removing sequential instance game.ball.x[0] (in view: work.game(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Removing sequential instance game.ball.y[0] (in view: work.game(verilog)) because it does not drive other instances.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FX1056 |Writing EDF file: C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\finalproject_impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

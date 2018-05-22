@@ -1,0 +1,70 @@
+----------------------------------------------------------------------
+Report for cell game.verilog
+
+Register bits: 38 of 54912 (0%)
+PIC Latch:       0
+I/O cells:       43
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       20       100.0
+                            FD1S3AX       36       100.0
+                            FD1S3IX        1       100.0
+                                GSR        1       100.0
+                                 IB        3       100.0
+                           IFS1P3JX        1       100.0
+                                INV        3       100.0
+                                 OB       40       100.0
+                           ORCALUT4        3       100.0
+                                PUR        1       100.0
+                                VHI        4       100.0
+                                VLO        4       100.0
+SUB MODULES 
+                    ball_controller        1       100.0
+                    game_controller        1       100.0
+                  paddle_controller        1       100.0
+                            
+                         TOTAL           120           
+----------------------------------------------------------------------
+Report for cell game_controller.netlist
+     Instance path:  game
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       20       100.0
+                            FD1S3AX       36       100.0
+                            FD1S3IX        1       100.0
+                                INV        3       100.0
+                           ORCALUT4        3       100.0
+                                VHI        3        75.0
+                                VLO        3        75.0
+SUB MODULES 
+                    ball_controller        1       100.0
+                  paddle_controller        1       100.0
+                            
+                         TOTAL            71           
+----------------------------------------------------------------------
+Report for cell ball_controller.netlist
+     Instance path:  game.ball
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       15        75.0
+                            FD1S3AX       27        75.0
+                                INV        2        66.7
+                           ORCALUT4        1        33.3
+                                VHI        1        25.0
+                                VLO        1        25.0
+                            
+                         TOTAL            47           
+----------------------------------------------------------------------
+Report for cell paddle_controller.netlist
+     Instance path:  game.player1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        5        25.0
+                            FD1S3AX        9        25.0
+                            FD1S3IX        1       100.0
+                                INV        1        33.3
+                           ORCALUT4        2        66.7
+                                VHI        1        25.0
+                                VLO        1        25.0
+                            
+                         TOTAL            20           

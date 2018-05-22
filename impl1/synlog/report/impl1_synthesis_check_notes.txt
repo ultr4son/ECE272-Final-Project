@@ -1,0 +1,14 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":1:0:1:6|Synthesizing module work_C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv_unit in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":2:7:2:20|Synthesizing module game_fsm_state in library work.
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":1:0:1:6|Synthesizing module work_C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv_unit in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":2:7:2:20|Synthesizing module game_fsm_state in library work.
+

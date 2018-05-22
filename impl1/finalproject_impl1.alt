@@ -1,0 +1,49 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Mon May 21 18:50:50 2018 *
+NOTE DESIGN NAME: game *
+NOTE DEVICE NAME: LCMXO3LF-6900C-5CABGA256 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS ball_x[0] : J12 : out *
+NOTE PINS clk : T9 : in *
+NOTE PINS p1_paddle_y[9] : H16 : out *
+NOTE PINS p1_paddle_y[8] : J11 : out *
+NOTE PINS p1_paddle_y[7] : K16 : out *
+NOTE PINS p1_paddle_y[6] : K14 : out *
+NOTE PINS p1_paddle_y[5] : L12 : out *
+NOTE PINS p1_paddle_y[4] : H13 : out *
+NOTE PINS p1_paddle_y[3] : G3 : out *
+NOTE PINS p1_paddle_y[2] : G11 : out *
+NOTE PINS p1_paddle_y[1] : F5 : out *
+NOTE PINS p1_paddle_y[0] : K15 : out *
+NOTE PINS p1_paddle_x[9] : G14 : out *
+NOTE PINS p1_paddle_x[8] : H14 : out *
+NOTE PINS p1_paddle_x[7] : H12 : out *
+NOTE PINS p1_paddle_x[6] : H11 : out *
+NOTE PINS p1_paddle_x[5] : H15 : out *
+NOTE PINS p1_paddle_x[4] : G16 : out *
+NOTE PINS p1_paddle_x[3] : J16 : out *
+NOTE PINS p1_paddle_x[2] : J15 : out *
+NOTE PINS p1_paddle_x[1] : L14 : out *
+NOTE PINS p1_paddle_x[0] : G15 : out *
+NOTE PINS ball_y[9] : K6 : out *
+NOTE PINS ball_y[8] : J2 : out *
+NOTE PINS ball_y[7] : L5 : out *
+NOTE PINS ball_y[6] : J5 : out *
+NOTE PINS ball_y[5] : K1 : out *
+NOTE PINS ball_y[4] : K3 : out *
+NOTE PINS ball_y[3] : J4 : out *
+NOTE PINS ball_y[2] : H5 : out *
+NOTE PINS ball_y[1] : K2 : out *
+NOTE PINS ball_y[0] : J14 : out *
+NOTE PINS ball_x[9] : H1 : out *
+NOTE PINS ball_x[8] : G2 : out *
+NOTE PINS ball_x[7] : H3 : out *
+NOTE PINS ball_x[6] : H4 : out *
+NOTE PINS ball_x[5] : J6 : out *
+NOTE PINS ball_x[4] : F1 : out *
+NOTE PINS ball_x[3] : H2 : out *
+NOTE PINS ball_x[2] : G1 : out *
+NOTE PINS ball_x[1] : H6 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *
