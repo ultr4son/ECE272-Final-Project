@@ -1,0 +1,115 @@
+module paddle_controller (input logic clk,
+					      input logic reset,
+						  input logic move_right, move_left,
+						  output logic [8:0] x, y
+						  );
+
+	parameter INIT_POS = 100;
+	parameter DX = 10;
+	assign y = 10;
+	always_ff@(posedge clk, posedge reset)
+		begin
+			if(reset)
+				x <= INIT_POS;
+			else
+				begin
+					if(move_right)
+						begin
+							x <= x + DX;
+						end
+					else if(move_left)
+						begin
+							x <= x + DX;		
+						end
+					else
+						begin
+							x <= x;
+						end
+					
+				end
+		end
+	
+endmodule
+
+module ball_controller(input logic clk,
+					   input logic reset,
+					   input logic collision,
+					   input logic [8:0] ddy,
+					   output logic[8:0] x, y);
+
+	parameter INIT_POS_X = 100;
+	parameter INIT_POS_Y = 100;
+	parameter INIT_DX = 10;
+	parameter INIT_DY = 0;
+	logic [8:0] dy;
+	logic [8:0] dx;
+	always_ff@(posedge clk, posedge reset)
+		begin
+			if(reset)
+				begin
+					dy <= INIT_DY;
+					dx <= INIT_DX;
+					x <= INIT_POS_X;
+					y <= INIT_POS_Y;
+				end
+			else
+				begin
+					if(collision)
+						begin
+							dx <= -dx;
+							dy <= -dy;
+						end
+						
+					x <= x + dx;			
+					dy <= dy + ddy;
+					y <= y + dy;
+				end
+		end
+endmodule
+
+module collision_detector(input logic [8:0] a_w, a_h, a_x, a_y,
+						  input logic [8:0] b_w, b_h, b_x, b_y,
+						  output logic collision);
+	logic collision_y;
+	assign collision_y = (a_y <= b_y + b_h) | (a_y + a_h >= b_y); //Just checking collision on y axis for now, add x if feeling fancy
+	assign collision = collision_y;
+endmodule
+
+module game_controller(input logic [8:0] p1_paddle_w, p1_paddle_h,
+					   input logic [8:0] ball_w, ball_h,
+					   input logic clk,
+					   input logic reset,
+					   input logic p1_move_right, p1_move_left,
+					   output logic [8:0] ball_x, ball_y, p1_paddle_x, p1_paddle_y
+					   );
+	
+	logic [8:0] ball_x_w, ball_y_w;
+	logic collision;
+	paddle_controller player1(
+		.clk(clk),
+		.reset(reset),
+		.move_right(p1_move_right),
+		.move_left(p1_move_left),
+		.x(p1_paddle_x),
+		.y(p1_paddle_y)
+	);
+	collision_detector cdetect(
+		.a_w(p1_paddle_w),
+		.a_h(p1_paddle_h),
+		.a_x(paddle_x),
+		.a_y(paddle_y),
+		.b_w(ball_w),
+		.b_h(ball_h),
+		.b_x(ball_x_w),
+		.b_y(ball_y_w),
+		.collision(collision)
+	);
+	ball_controller ball(
+		.clk(clk),
+		.reset(reset),
+		.ddy(-10),
+		.x(ball_x_w),
+		.y(ball_y_w),
+		.collision(collision)
+	);
+endmodule

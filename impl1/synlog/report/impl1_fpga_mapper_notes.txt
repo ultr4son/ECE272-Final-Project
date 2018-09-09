@@ -1,16 +1,11 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 @N: MT206 |Auto Constrain mode is enabled
-@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Removing sequential instance game.player1.x[0] (in view: work.game(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Removing sequential instance game.ball.x[0] (in view: work.game(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Removing sequential instance game.ball.y[0] (in view: work.game(verilog)) because it does not drive other instances.
-@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Replicating instance game.ball.dy[1] (in view: work.game(verilog)) with 10 loads 1 time to improve timing.
-@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Replicating instance game.ball.dy[2] (in view: work.game(verilog)) with 8 loads 1 time to improve timing.
-@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Replicating instance game.player1.dx[2] (in view: work.game(verilog)) with 7 loads 1 time to improve timing.
-@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Replicating instance game.ball.dy[3] (in view: work.game(verilog)) with 7 loads 1 time to improve timing.
-@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Replicating instance game.ball.dy[4] (in view: work.game(verilog)) with 7 loads 1 time to improve timing.
-@N: FX271 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Replicating instance game.ball.dy[5] (in view: work.game(verilog)) with 7 loads 1 time to improve timing.
+@N: MO225 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\game_fsm.sv":15:1:15:9|There are no possible illegal states for state machine state[3:0] (in view: work.game_fsm_state(verilog)); safe FSM implementation is not required.
+@N: MO231 :"c:\users\tristan thompson\downloads\hvsync_generator\hvsync_generator.sv":20:0:20:5|Found counter in view:work.renderer(verilog) instance syncgen.CounterY[8:0] 
+@N: MF578 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":47:1:47:9|Incompatible asynchronous control logic preventing generated clock conversion of gamelogic.game.ball.collision_latch (in view: work.tennis(verilog)).
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MT611 :|Automatically generated clock clock_counter|clk_o_derived_clock is not used and is being removed
 @N: FX1056 |Writing EDF file: C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.

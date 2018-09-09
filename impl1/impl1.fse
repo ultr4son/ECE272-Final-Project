@@ -1,0 +1,12 @@
+
+fsm_encoding {8151151} sequential
+
+fsm_state_encoding {8151151} START_SCREEN {00}
+
+fsm_state_encoding {8151151} RESET {01}
+
+fsm_state_encoding {8151151} GAME_OVER {10}
+
+fsm_state_encoding {8151151} PLAYING {11}
+
+fsm_registers {8151151} {state[1]}  {state[0]} 

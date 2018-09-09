@@ -19,6 +19,145 @@ prj_project close
 
 
 
+<A name="pn180525213229"></A><B><U><big>pn180525213229</big></U></B>
+#Start recording tcl command: 5/23/2018 15:49:02
+#Project Location: C:/lscc/diamond/3.10_x64/bin/nt64/finalproject; Project name: finalproject
+C:/lscc/diamond/3.10_x64/bin/nt64/chapter4exercises
+chapter4exercises
+#Start recording tcl command: 5/25/2018 21:32:29
+#Project Location: C:/lscc/diamond/3.10_x64/bin/nt64/chapter4exercises; Project name: chapter4exercises
+prj_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/finalproject.ldf"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src add "C:/Users/Tristan Thompson/Downloads/hvsync_generator/hvsync_generator.sv"
+prj_src add "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/Top.sv"
+prj_src add "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/Renderer.sv"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+launch_synplify_prj impl1
+prj_project save
+prj_project close
+prj_project open "C:/lscc/diamond/3.10_x64/bin/nt64/chapter4exercises/chapter4exercises.ldf"
+#Stop recording: 5/25/2018 21:32:29
+
+
+
+<A name="pn180531164803"></A><B><U><big>pn180531164803</big></U></B>
+#Start recording tcl command: 5/31/2018 16:02:46
+#Project Location: C:/lscc/diamond/3.10_x64/bin/nt64/finalproject; Project name: finalproject
+C:/lscc/diamond/3.10_x64/bin/nt64/hsynctest
+hsynctest
+#Start recording tcl command: 5/31/2018 16:48:02
+#Project Location: C:/lscc/diamond/3.10_x64/bin/nt64/hsynctest; Project name: hsynctest
+prj_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/finalproject.ldf"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project save "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+prj_src add -exclude "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+prj_src enable "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+pgr_program run
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project close
+pgr_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+pgr_program run
+pgr_project close
+pgr_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project close
+pgr_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+pgr_program set -port FTUSB-1
+pgr_program run
+pgr_program set -port FTUSB-0
+pgr_program run
+pgr_project save "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+prj_project save
+prj_project close
+prj_project new -name "hsynctest" -impl "impl1" -dev LCMXO3L-6900C-5BG256C -synthesis "synplify"
+prj_src add "C:/Users/Tristan Thompson/Downloads/hvsync_generator/hvsync_generator.sv"
+prj_project save
+pgr_project close
+#Stop recording: 5/31/2018 16:48:03
+
+
+
+<A name="pn180603165245"></A><B><U><big>pn180603165245</big></U></B>
+#Start recording tcl command: 6/1/2018 17:00:24
+#Project Location: C:/lscc/diamond/3.10_x64/bin/nt64/finalproject; Project name: finalproject
+C:/lscc/diamond/3.10_x64/bin/nt64/hsynctest_1
+hsynctest_1
+#Start recording tcl command: 6/3/2018 16:52:45
+#Project Location: C:/lscc/diamond/3.10_x64/bin/nt64/hsynctest_1; Project name: hsynctest_1
+prj_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/finalproject.ldf"
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+pgr_program run
+pgr_program set -port FTUSB-0
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project close
+pgr_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+pgr_program run
+pgr_program set -port FTUSB-0
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+launch_synplify_prj impl1
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+launch_synplify_prj impl1
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+pgr_project save "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project close
+pgr_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+pgr_program run
+prj_project close
+prj_project open "C:/lscc/diamond/3.10_x64/bin/nt64/hsynctest_1/hsynctest_1.ldf"
+#Stop recording: 6/3/2018 16:52:45
+
+
+
 <BR>
 <BR>
 <BR>

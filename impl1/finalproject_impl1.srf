@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-4QTE81U
 
-# Mon May 21 19:04:26 2018
+# Tue Jun  5 21:31:13 2018
 
 #Implementation: impl1
 
@@ -24,65 +24,78 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 @I::"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv" (library work)
 @I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv" (library work)
 @I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv" (library work)
+@I::"C:\Users\Tristan Thompson\Downloads\hvsync_generator\hvsync_generator.sv" (library work)
 @I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv" (library work)
+@I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv" (library work)
+@I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Renderer.sv" (library work)
 Error reading file dependency information in file C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.fdepVerilog syntax check successful!
-Options changed - recompiling
+File C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv changed - recompiling
 @N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":1:0:1:6|Synthesizing module work_C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv_unit in library work.
-Selecting top level module game
+Selecting top level module tennis
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo3lf.v":1759:7:1759:10|Synthesizing module OSCH in library work.
+@N: CG364 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":1:7:1:19|Synthesizing module clock_counter in library work.
 @N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":2:7:2:20|Synthesizing module game_fsm_state in library work.
-@W: CG532 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":8:1:8:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@N: CG179 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":28:14:28:18|Removing redundant assignment.
 @N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":1:7:1:23|Synthesizing module paddle_controller in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:7:52:24|Synthesizing module collision_detector in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":24:7:24:21|Synthesizing module ball_controller in library work.
-@W: CL169 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":31:1:31:9|Pruning unused register dx[9:0]. Make sure that there are no unused intermediate registers.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":60:7:60:21|Synthesizing module game_controller in library work.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":81:7:81:14|Port-width mismatch for port a_x. The port definition is 10 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":82:7:82:14|Port-width mismatch for port a_y. The port definition is 10 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":92:8:92:10|Port-width mismatch for port ddy. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@N: CG179 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":26:12:26:12|Removing redundant assignment.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":76:7:76:24|Synthesizing module collision_detector in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":34:7:34:21|Synthesizing module ball_controller in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":87:7:87:21|Synthesizing module game_controller in library work.
 @N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Synthesizing module game in library work.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":20:15:20:22|Port-width mismatch for port p1_paddle_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":21:15:21:22|Port-width mismatch for port p1_paddle_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":22:10:22:15|Port-width mismatch for port ball_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":23:10:23:15|Port-width mismatch for port ball_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-Error reading file dependency information in file C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.fdep@W: CL156 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":81:7:81:14|*Input un1_paddle_x[9:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":82:7:82:14|*Input un1_paddle_y[9:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":25:20:25:24|Input reset is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":26:20:26:28|Input collision is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:44:52:46|Input a_w is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:54:52:56|Input a_x is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":53:26:53:28|Input b_w is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":53:36:53:38|Input b_x is unused.
-@N: CL189 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Register bit dx[0] is always 0.
-@N: CL189 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Register bit dx[1] is always 1.
-@W: CL279 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Pruning register bits 1 to 0 of dx[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":2:23:2:27|Input reset is unused.
-@N: CL201 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":9:1:9:9|Trying to extract state machine for register state.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":25:15:25:22|Port-width mismatch for port p1_paddle_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":26:15:26:22|Port-width mismatch for port p1_paddle_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":27:10:27:15|Port-width mismatch for port ball_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":28:10:28:15|Port-width mismatch for port ball_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@N: CG364 :"C:\Users\Tristan Thompson\Downloads\hvsync_generator\hvsync_generator.sv":1:7:1:22|Synthesizing module hvsync_generator in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Renderer.sv":1:7:1:14|Synthesizing module renderer in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":1:7:1:12|Synthesizing module tennis in library work.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":47:15:47:25|Port-width mismatch for port p1_paddle_x. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":48:15:48:25|Port-width mismatch for port p1_paddle_y. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":45:10:45:15|Port-width mismatch for port ball_x. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":46:10:46:15|Port-width mismatch for port ball_y. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
+Error reading file dependency information in file C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.fdep@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":76:49:76:51|Input a_h is unused.
+@N: CL201 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":16:1:16:9|Trying to extract state machine for register state.
 Extracted state machine for register state
-State machine has 3 reachable states with original encodings of:
+State machine has 4 reachable states with original encodings of:
+   00000000000000000000000000000000
    00000000000000000000000000000001
    00000000000000000000000000000010
    00000000000000000000000000000011
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Pruning register bits 31 to 19 of count[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 76MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 77MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May 21 19:04:27 2018
+# Tue Jun  5 21:31:13 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
 @N|Running in 64-bit mode
 File C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.srs changed - recompiling
-@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Selected library: work cell: game view verilog as top level
-@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Selected library: work cell: game view verilog as top level
+@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":1:7:1:12|Selected library: work cell: tennis view verilog as top level
+@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":1:7:1:12|Selected library: work cell: tennis view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May 21 19:04:27 2018
+# Tue Jun  5 21:31:14 2018
 
 ###########################################################]
 @END
@@ -92,26 +105,24 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May 21 19:04:27 2018
+# Tue Jun  5 21:31:14 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
 @N|Running in 64-bit mode
 File C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\finalproject_impl1_comp.srs changed - recompiling
-@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Selected library: work cell: game view verilog as top level
-@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Selected library: work cell: game view verilog as top level
+@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":1:7:1:12|Selected library: work cell: tennis view verilog as top level
+@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":1:7:1:12|Selected library: work cell: tennis view verilog as top level
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May 21 19:04:29 2018
+# Tue Jun  5 21:31:15 2018
 
 ###########################################################]
-Pre-mapping Report
-
-# Mon May 21 19:04:29 2018
+# Tue Jun  5 21:31:15 2018
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -131,58 +142,60 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
 
-@N: BN115 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":78:20:78:26|Removing instance cdetect (in view: work.game_controller(verilog)) of type view:work.collision_detector(verilog) because it does not drive other instances.
-@N: BN115 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\game.sv":12:16:12:18|Removing instance fsm (in view: work.game(verilog)) of type view:work.game_fsm_state(verilog) because it does not drive other instances.
-@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\game_fsm.sv":17:1:17:9|Removing sequential instance reset (in view: work.game_fsm_state(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\game_fsm.sv":9:1:9:9|Removing sequential instance state[2:0] (in view: work.game_fsm_state(verilog)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
-syn_allowed_resources : blockrams=240  set on top level netlist game
+syn_allowed_resources : blockrams=240  set on top level netlist tennis
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
 
 
 Clock Summary
 ******************
 
-          Start        Requested     Requested     Clock        Clock                   Clock
-Level     Clock        Frequency     Period        Type         Group                   Load 
----------------------------------------------------------------------------------------------
-0 -       game|clk     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     48   
-=============================================================================================
+          Start                                   Requested     Requested     Clock                                        Clock                   Clock
+Level     Clock                                   Frequency     Period        Type                                         Group                   Load 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       tennis|clk_inferred_clock               24.2 MHz      41.356        inferred                                     Inferred_clkgroup_0     45   
+1 .         clock_counter|clk_o_derived_clock     24.2 MHz      41.356        derived (from tennis|clk_inferred_clock)     Inferred_clkgroup_0     58   
+========================================================================================================================================================
 
-@W: MT529 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Found inferred clock game|clk which controls 48 sequential elements including game.player1.x[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\tristan thompson\documents\section4code\clock_counter.sv":14:2:14:10|Found inferred clock tennis|clk_inferred_clock which controls 45 sequential elements including counter_1.count[18:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
+Encoding state machine state[3:0] (in view: work.game_fsm_state(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 00
+   00000000000000000000000000000001 -> 01
+   00000000000000000000000000000010 -> 10
+   00000000000000000000000000000011 -> 11
+@N: MO225 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\game_fsm.sv":16:1:16:9|There are no possible illegal states for state machine state[3:0] (in view: work.game_fsm_state(verilog)); safe FSM implementation is not required.
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 142MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon May 21 19:04:30 2018
+# Tue Jun  5 21:31:16 2018
 
 ###########################################################]
-Map & Optimize Report
-
-# Mon May 21 19:04:30 2018
+# Tue Jun  5 21:31:16 2018
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -213,60 +226,61 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
-@W: BN132 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Removing instance game.player1.dx[9] because it is equivalent to instance game.player1.dx[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Removing instance game.player1.dx[8] because it is equivalent to instance game.player1.dx[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Removing instance game.player1.dx[7] because it is equivalent to instance game.player1.dx[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Removing instance game.player1.dx[6] because it is equivalent to instance game.player1.dx[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Removing instance game.player1.dx[5] because it is equivalent to instance game.player1.dx[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Removing instance game.player1.dx[4] because it is equivalent to instance game.player1.dx[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Removing sequential instance game.player1.x[0] (in view: work.game(verilog)) because it does not drive other instances.
-@A: BN291 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":11:1:11:9|Boundary register game.player1.x[0] (in view: work.game(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Removing sequential instance game.ball.x[0] (in view: work.game(verilog)) because it does not drive other instances.
-@A: BN291 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Boundary register game.ball.x[0] (in view: work.game(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+Encoding state machine state[3:0] (in view: work.game_fsm_state(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 00
+   00000000000000000000000000000001 -> 01
+   00000000000000000000000000000010 -> 10
+   00000000000000000000000000000011 -> 11
+@N: MO225 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\game_fsm.sv":16:1:16:9|There are no possible illegal states for state machine state[3:0] (in view: work.game_fsm_state(verilog)); safe FSM implementation is not required.
+@N: MO231 :"c:\users\tristan thompson\downloads\hvsync_generator\hvsync_generator.sv":20:0:20:5|Found counter in view:work.renderer(verilog) instance syncgen.CounterY[8:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+@N: MF578 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":10:1:10:9|Incompatible asynchronous control logic preventing generated clock conversion of gamelogic.game.player1.x[4] (in view: work.tennis(verilog)).
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 142MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+@N: FA113 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\renderer.sv":45:96:45:111|Pipelining module un1_ball_y[9:1]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":47:1:47:9|Pushed in register y[9:0].
+@N: MF169 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":47:1:47:9|Pushed in register dy[9:0].
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
-
-@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Removing sequential instance game.ball.y[0] (in view: work.game(verilog)) because it does not drive other instances.
-@A: BN291 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":31:1:31:9|Boundary register game.ball.y[0] (in view: work.game(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
-
-
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		   995.83ns		   4 /        38
+   1		0h:00m:00s		    30.80ns		  87 /       120
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
 
+@N: MT611 :|Automatically generated clock clock_counter|clk_o_derived_clock is not used and is being removed
 
 
 @S |Clock Optimization Summary
@@ -274,46 +288,46 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 38 clock pin(s) of sequential element(s)
-0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 119 clock pin(s) of sequential element(s)
+0 instances converted, 119 sequential instances remain driven by gated/generated clocks
 
-============================== Non-Gated/Non-Generated Clocks ==============================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance     
---------------------------------------------------------------------------------------------
-@K:CKID0001       clk                 port                   38         game_player1_dxio[3]
-============================================================================================
+====================================================================================================== Gated/Generated Clocks ======================================================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance               Explanation                                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       osc_int             OSCH                   119        render_syncgen_vga_HS_iio     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+====================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 141MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 144MB)
 
 Writing Analyst data base C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\finalproject_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 144MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\finalproject_impl1.edi
 M-2017.03L-SP1-1
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 147MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 147MB)
 
-@W: MT420 |Found inferred clock game|clk with period 1000.00ns. Please declare a user-defined clock on object "p:clk"
+@W: MT420 |Found inferred clock tennis|clk_inferred_clock with period 41.36ns. Please declare a user-defined clock on object "n:clk"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon May 21 19:04:31 2018
+# Timing Report written on Tue Jun  5 21:31:18 2018
 #
 
 
-Top view:               game
-Requested Frequency:    1.0 MHz
+Top view:               tennis
+Requested Frequency:    24.2 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -327,13 +341,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 995.265
+Worst slack in design: 30.297
 
-                   Requested     Estimated     Requested     Estimated                 Clock        Clock              
-Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
------------------------------------------------------------------------------------------------------------------------
-game|clk           1.0 MHz       211.2 MHz     1000.000      4.735         995.265     inferred     Inferred_clkgroup_0
-=======================================================================================================================
+                              Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                Frequency     Frequency     Period        Period        Slack      Type         Group              
+---------------------------------------------------------------------------------------------------------------------------------
+tennis|clk_inferred_clock     24.2 MHz      90.4 MHz      41.356        11.059        30.297     inferred     Inferred_clkgroup_0
+=================================================================================================================================
 
 
 
@@ -342,12 +356,12 @@ game|clk           1.0 MHz       211.2 MHz     1000.000      4.735         995.2
 Clock Relationships
 *******************
 
-Clocks              |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
-------------------------------------------------------------------------------------------------------------
-Starting  Ending    |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
-------------------------------------------------------------------------------------------------------------
-game|clk  game|clk  |  1000.000    995.265  |  No paths    -      |  No paths    -      |  No paths    -    
-============================================================================================================
+Clocks                                                |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------
+Starting                   Ending                     |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------
+tennis|clk_inferred_clock  tennis|clk_inferred_clock  |  41.356      30.297  |  No paths    -      |  No paths    -      |  No paths    -    
+=============================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -361,7 +375,7 @@ No IO constraint found
 
 
 ====================================
-Detailed Report for Clock: game|clk
+Detailed Report for Clock: tennis|clk_inferred_clock
 ====================================
 
 
@@ -369,41 +383,41 @@ Detailed Report for Clock: game|clk
 Starting Points with Worst Slack
 ********************************
 
-                         Starting                                                  Arrival            
-Instance                 Reference     Type         Pin     Net                    Time        Slack  
-                         Clock                                                                        
-------------------------------------------------------------------------------------------------------
-game.ball.dy[1]          game|clk      FD1S3AX      Q       dy[1]                  1.108       995.265
-game.player1.x[1]        game|clk      FD1S3AX      Q       p1_paddle_x_c[1]       1.108       995.265
-game.ball.x[1]           game|clk      FD1S3AX      Q       ball_x_c[1]            1.108       995.265
-game.ball.y[1]           game|clk      FD1S3AX      Q       ball_y_c[1]            1.108       995.265
-game.player1.dx[2]       game|clk      FD1S3IX      Q       dx[2]                  1.220       995.295
-game.ball.dy[2]          game|clk      FD1S3AX      Q       dy[2]                  1.044       995.471
-game.ball.dy[3]          game|clk      FD1S3AX      Q       dy[3]                  1.044       995.471
-game_player1_dxio[3]     game|clk      IFS1P3JX     Q       game.player1.dx[3]     1.044       995.471
-game.ball.x[2]           game|clk      FD1S3AX      Q       ball_x_c[2]            1.044       995.471
-game.player1.x[2]        game|clk      FD1S3AX      Q       p1_paddle_x_c[2]       1.044       995.471
-======================================================================================================
+                                   Starting                                                          Arrival           
+Instance                           Reference                     Type        Pin     Net             Time        Slack 
+                                   Clock                                                                               
+-----------------------------------------------------------------------------------------------------------------------
+gamelogic.game.ball.dy_pipe        tennis|clk_inferred_clock     FD1P3DX     Q       un1_ddy_1       1.180       30.297
+gamelogic.game.ball.dy_pipe_10     tennis|clk_inferred_clock     FD1P3DX     Q       un1_dyf[0]      1.180       30.297
+gamelogic.game.ball.dy_pipe_1      tennis|clk_inferred_clock     FD1P3DX     Q       un1_ddyf[1]     0.972       30.648
+gamelogic.game.ball.dy_pipe_2      tennis|clk_inferred_clock     FD1P3DX     Q       un1_ddyf[2]     0.972       30.648
+gamelogic.game.ball.dy_pipe_11     tennis|clk_inferred_clock     FD1P3DX     Q       un1_dyf[1]      0.972       30.648
+gamelogic.game.ball.dy_pipe_12     tennis|clk_inferred_clock     FD1P3DX     Q       un1_dyf[2]      0.972       30.648
+gamelogic.game.ball.dy_pipe_3      tennis|clk_inferred_clock     FD1P3DX     Q       un1_ddyf[3]     0.972       30.791
+gamelogic.game.ball.dy_pipe_4      tennis|clk_inferred_clock     FD1P3DX     Q       un1_ddyf[4]     0.972       30.791
+gamelogic.game.ball.dy_pipe_13     tennis|clk_inferred_clock     FD1P3DX     Q       un1_dyf[3]      0.972       30.791
+gamelogic.game.ball.dy_pipe_14     tennis|clk_inferred_clock     FD1P3DX     Q       un1_dyf[4]      0.972       30.791
+=======================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                      Starting                                                 Required            
-Instance              Reference     Type        Pin     Net                    Time         Slack  
-                      Clock                                                                        
----------------------------------------------------------------------------------------------------
-game.ball.dy[8]       game|clk      FD1S3AX     D       un9_dy[8]              999.894      995.265
-game.ball.dy[9]       game|clk      FD1S3AX     D       un9_dy[9]              999.894      995.265
-game.ball.x[8]        game|clk      FD1S3AX     D       un4_x_1_cry_7_0_S0     999.894      995.265
-game.player1.x[8]     game|clk      FD1S3AX     D       un6_x_1_cry_7_0_S0     999.894      995.265
-game.player1.x[9]     game|clk      FD1S3AX     D       un6_x_1_cry_7_0_S1     999.894      995.265
-game.ball.x[9]        game|clk      FD1S3AX     D       un4_x_1_cry_7_0_S1     999.894      995.265
-game.ball.y[8]        game|clk      FD1S3AX     D       un4_y_cry_8_0_S0       999.894      995.265
-game.ball.y[9]        game|clk      FD1S3AX     D       un4_y_cry_8_0_S1       999.894      995.265
-game.ball.dy[6]       game|clk      FD1S3AX     D       un9_dy[6]              999.894      995.408
-game.ball.dy[7]       game|clk      FD1S3AX     D       un9_dy[7]              999.894      995.408
-===================================================================================================
+                                    Starting                                                                        Required           
+Instance                            Reference                     Type         Pin     Net                          Time         Slack 
+                                    Clock                                                                                              
+---------------------------------------------------------------------------------------------------------------------------------------
+gamelogic.game.cdetect.y_pipe_8     tennis|clk_inferred_clock     FD1P3BX      D       collision_y_0[8]             41.251       30.297
+gamelogic.game.cdetect.y_pipe_9     tennis|clk_inferred_clock     FD1P3DX      D       collision_y_0[9]             41.251       30.297
+gamelogic.game.cdetect.y_pipe_6     tennis|clk_inferred_clock     FD1P3DX      D       collision_y_0[6]             41.251       30.440
+gamelogic.game.cdetect.y_pipe_7     tennis|clk_inferred_clock     FD1P3DX      D       collision_y_0[7]             41.251       30.440
+gamelogic.game.cdetect.y_pipe_4     tennis|clk_inferred_clock     FD1P3BX      D       collision_y_0[4]             41.251       30.582
+gamelogic.game.cdetect.y_pipe_5     tennis|clk_inferred_clock     FD1P3BX      D       collision_y_0[5]             41.251       30.582
+render_vga_gio                      tennis|clk_inferred_clock     OFS1P3DX     D       render.vga_g_3               41.251       30.805
+render_vga_rio                      tennis|clk_inferred_clock     OFS1P3IX     D       render.vga_rc_i              41.251       30.805
+gamelogic.game.ball.dy_pipe         tennis|clk_inferred_clock     FD1P3DX      SP      collision_latch_RNINO4F1     40.885       31.292
+gamelogic.game.ball.dy_pipe_1       tennis|clk_inferred_clock     FD1P3DX      SP      collision_latch_RNINO4F1     40.885       31.292
+=======================================================================================================================================
 
 
 
@@ -412,43 +426,52 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      1000.000
+      Requested Period:                      41.356
     - Setup time:                            0.106
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         999.894
+    = Required time:                         41.251
 
-    - Propagation time:                      4.630
+    - Propagation time:                      10.954
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     995.265
+    = Slack (critical) :                     30.297
 
-    Number of logic level(s):                5
-    Starting point:                          game.ball.dy[1] / Q
-    Ending point:                            game.ball.y[9] / D
-    The start point is clocked by            game|clk [rising] on pin CK
-    The end   point is clocked by            game|clk [rising] on pin CK
+    Number of logic level(s):                8
+    Starting point:                          gamelogic.game.ball.dy_pipe / Q
+    Ending point:                            gamelogic.game.cdetect.y_pipe_9 / D
+    The start point is clocked by            tennis|clk_inferred_clock [rising] on pin CK
+    The end   point is clocked by            tennis|clk_inferred_clock [rising] on pin CK
 
-Instance / Net                          Pin      Pin               Arrival     No. of    
-Name                        Type        Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------
-game.ball.dy[1]             FD1S3AX     Q        Out     1.108     1.108       -         
-dy[1]                       Net         -        -       -         -           3         
-game.ball.un4_y_cry_1_0     CCU2D       B1       In      0.000     1.108       -         
-game.ball.un4_y_cry_1_0     CCU2D       COUT     Out     1.544     2.652       -         
-un4_y_cry_1                 Net         -        -       -         -           1         
-game.ball.un4_y_cry_2_0     CCU2D       CIN      In      0.000     2.652       -         
-game.ball.un4_y_cry_2_0     CCU2D       COUT     Out     0.143     2.795       -         
-un4_y_cry_3                 Net         -        -       -         -           1         
-game.ball.un4_y_cry_4_0     CCU2D       CIN      In      0.000     2.795       -         
-game.ball.un4_y_cry_4_0     CCU2D       COUT     Out     0.143     2.938       -         
-un4_y_cry_5                 Net         -        -       -         -           1         
-game.ball.un4_y_cry_6_0     CCU2D       CIN      In      0.000     2.938       -         
-game.ball.un4_y_cry_6_0     CCU2D       COUT     Out     0.143     3.081       -         
-un4_y_cry_7                 Net         -        -       -         -           1         
-game.ball.un4_y_cry_8_0     CCU2D       CIN      In      0.000     3.081       -         
-game.ball.un4_y_cry_8_0     CCU2D       S1       Out     1.549     4.630       -         
-un4_y_cry_8_0_S1            Net         -        -       -         -           1         
-game.ball.y[9]              FD1S3AX     D        In      0.000     4.630       -         
-=========================================================================================
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                           Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+gamelogic.game.ball.dy_pipe                    FD1P3DX     Q        Out     1.180     1.180       -         
+un1_ddy_1                                      Net         -        -       -         -           5         
+gamelogic.game.ball.un1_ddy_1_cry_0_0          CCU2D       A1       In      0.000     1.180       -         
+gamelogic.game.ball.un1_ddy_1_cry_0_0          CCU2D       COUT     Out     1.544     2.724       -         
+un1_ddy_1_cry_0                                Net         -        -       -         -           1         
+gamelogic.game.ball.un1_ddy_1_cry_1_0          CCU2D       CIN      In      0.000     2.724       -         
+gamelogic.game.ball.un1_ddy_1_cry_1_0          CCU2D       S1       Out     1.685     4.409       -         
+dy[2]                                          Net         -        -       -         -           3         
+gamelogic.game.ball.un4_y_cry_1_0              CCU2D       A1       In      0.000     4.409       -         
+gamelogic.game.ball.un4_y_cry_1_0              CCU2D       COUT     Out     1.544     5.954       -         
+un4_y_cry_2                                    Net         -        -       -         -           1         
+gamelogic.game.ball.un4_y_cry_3_0              CCU2D       CIN      In      0.000     5.954       -         
+gamelogic.game.ball.un4_y_cry_3_0              CCU2D       S0       Out     1.621     7.575       -         
+un4_y[3]                                       Net         -        -       -         -           2         
+gamelogic.game.cdetect.collision_y_cry_2_0     CCU2D       A1       In      0.000     7.575       -         
+gamelogic.game.cdetect.collision_y_cry_2_0     CCU2D       COUT     Out     1.544     9.119       -         
+collision_y_cry_3                              Net         -        -       -         -           1         
+gamelogic.game.cdetect.collision_y_cry_4_0     CCU2D       CIN      In      0.000     9.119       -         
+gamelogic.game.cdetect.collision_y_cry_4_0     CCU2D       COUT     Out     0.143     9.262       -         
+collision_y_cry_5                              Net         -        -       -         -           1         
+gamelogic.game.cdetect.collision_y_cry_6_0     CCU2D       CIN      In      0.000     9.262       -         
+gamelogic.game.cdetect.collision_y_cry_6_0     CCU2D       COUT     Out     0.143     9.405       -         
+collision_y_cry_7                              Net         -        -       -         -           1         
+gamelogic.game.cdetect.collision_y_cry_8_0     CCU2D       CIN      In      0.000     9.405       -         
+gamelogic.game.cdetect.collision_y_cry_8_0     CCU2D       S1       Out     1.549     10.954      -         
+collision_y_0[9]                               Net         -        -       -         -           1         
+gamelogic.game.cdetect.y_pipe_9                FD1P3DX     D        In      0.000     10.954      -         
+============================================================================================================
 
 
 
@@ -457,38 +480,44 @@ game.ball.y[9]              FD1S3AX     D        In      0.000     4.630       -
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 147MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 147MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo3lf_6900c-5
 
-Register bits: 38 of 54912 (0%)
+Register bits: 119 of 54912 (0%)
 PIC Latch:       0
-I/O cells:       43
+I/O cells:       9
 
 
 Details:
-CCU2D:          20
-FD1S3AX:        36
-FD1S3IX:        1
+CCU2D:          129
+FD1P3AX:        12
+FD1P3BX:        16
+FD1P3DX:        55
+FD1S3AX:        11
+FD1S3DX:        20
 GSR:            1
-IB:             3
-IFS1P3JX:       1
-INV:            3
-OB:             40
-ORCALUT4:       3
+IB:             4
+INV:            6
+OB:             5
+OFS1P3DX:       2
+OFS1P3IX:       1
+OFS1P3JX:       2
+ORCALUT4:       80
+OSCH:           1
 PUR:            1
-VHI:            4
-VLO:            4
+VHI:            10
+VLO:            10
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 31MB peak: 145MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 32MB peak: 147MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon May 21 19:04:32 2018
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Tue Jun  5 21:31:19 2018
 
 ###########################################################]

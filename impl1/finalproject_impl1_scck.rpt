@@ -1,12 +1,12 @@
 # Synopsys Constraint Checker(syntax only), version maplat, Build 1796R, built Aug  4 2017
 # Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Mon May 21 19:04:29 2018
+# Written on Tue Jun  5 21:31:15 2018
 
 
 ##### DESIGN INFO #######################################################
 
-Top View:                "game"
+Top View:                "tennis"
 Constraint File(s):      (none)
 
 #Run constraint checker to find more issues with constraints.
@@ -21,8 +21,9 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start        Requested     Requested     Clock        Clock                   Clock
-Level     Clock        Frequency     Period        Type         Group                   Load 
----------------------------------------------------------------------------------------------
-0 -       game|clk     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     48   
-=============================================================================================
+          Start                                   Requested     Requested     Clock                                        Clock                   Clock
+Level     Clock                                   Frequency     Period        Type                                         Group                   Load 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       tennis|clk_inferred_clock               24.2 MHz      41.356        inferred                                     Inferred_clkgroup_0     45   
+1 .         clock_counter|clk_o_derived_clock     24.2 MHz      41.356        derived (from tennis|clk_inferred_clock)     Inferred_clkgroup_0     58   
+========================================================================================================================================================

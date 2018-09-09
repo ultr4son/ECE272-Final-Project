@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>6</data>
+<data>3</data>
 <report_link name="more">
 <data>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synlog\report\finalproject_impl1_premap_notes.txt</data>
 </report_link>
@@ -37,10 +37,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:00s</data>
 </info>
 <info name="Peak Memory">
-<data>141MB</data>
+<data>142MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1526954670</data>
+<data type="timestamp">1528259476</data>
 </info>
 </job_info>
 </job_run_status>

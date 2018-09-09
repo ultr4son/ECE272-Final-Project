@@ -15,65 +15,78 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 @I::"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv" (library work)
 @I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv" (library work)
 @I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv" (library work)
+@I::"C:\Users\Tristan Thompson\Downloads\hvsync_generator\hvsync_generator.sv" (library work)
 @I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv" (library work)
+@I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv" (library work)
+@I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Renderer.sv" (library work)
 Error reading file dependency information in file C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.fdepVerilog syntax check successful!
-Options changed - recompiling
+File C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv changed - recompiling
 @N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":1:0:1:6|Synthesizing module work_C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv_unit in library work.
-Selecting top level module game
+Selecting top level module tennis
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo3lf.v":1759:7:1759:10|Synthesizing module OSCH in library work.
+@N: CG364 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":1:7:1:19|Synthesizing module clock_counter in library work.
 @N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":2:7:2:20|Synthesizing module game_fsm_state in library work.
-@W: CG532 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":8:1:8:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@N: CG179 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":28:14:28:18|Removing redundant assignment.
 @N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":1:7:1:23|Synthesizing module paddle_controller in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:7:52:24|Synthesizing module collision_detector in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":24:7:24:21|Synthesizing module ball_controller in library work.
-@W: CL169 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":31:1:31:9|Pruning unused register dx[9:0]. Make sure that there are no unused intermediate registers.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":60:7:60:21|Synthesizing module game_controller in library work.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":81:7:81:14|Port-width mismatch for port a_x. The port definition is 10 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":82:7:82:14|Port-width mismatch for port a_y. The port definition is 10 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":92:8:92:10|Port-width mismatch for port ddy. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@N: CG179 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":26:12:26:12|Removing redundant assignment.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":76:7:76:24|Synthesizing module collision_detector in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":34:7:34:21|Synthesizing module ball_controller in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":87:7:87:21|Synthesizing module game_controller in library work.
 @N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Synthesizing module game in library work.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":20:15:20:22|Port-width mismatch for port p1_paddle_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":21:15:21:22|Port-width mismatch for port p1_paddle_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":22:10:22:15|Port-width mismatch for port ball_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":23:10:23:15|Port-width mismatch for port ball_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-Error reading file dependency information in file C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.fdep@W: CL156 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":81:7:81:14|*Input un1_paddle_x[9:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":82:7:82:14|*Input un1_paddle_y[9:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":25:20:25:24|Input reset is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":26:20:26:28|Input collision is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:44:52:46|Input a_w is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:54:52:56|Input a_x is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":53:26:53:28|Input b_w is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":53:36:53:38|Input b_x is unused.
-@N: CL189 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Register bit dx[0] is always 0.
-@N: CL189 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Register bit dx[1] is always 1.
-@W: CL279 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Pruning register bits 1 to 0 of dx[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":2:23:2:27|Input reset is unused.
-@N: CL201 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":9:1:9:9|Trying to extract state machine for register state.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":25:15:25:22|Port-width mismatch for port p1_paddle_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":26:15:26:22|Port-width mismatch for port p1_paddle_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":27:10:27:15|Port-width mismatch for port ball_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":28:10:28:15|Port-width mismatch for port ball_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@N: CG364 :"C:\Users\Tristan Thompson\Downloads\hvsync_generator\hvsync_generator.sv":1:7:1:22|Synthesizing module hvsync_generator in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Renderer.sv":1:7:1:14|Synthesizing module renderer in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":1:7:1:12|Synthesizing module tennis in library work.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":47:15:47:25|Port-width mismatch for port p1_paddle_x. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":48:15:48:25|Port-width mismatch for port p1_paddle_y. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":45:10:45:15|Port-width mismatch for port ball_x. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":46:10:46:15|Port-width mismatch for port ball_y. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
+Error reading file dependency information in file C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.fdep@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":76:49:76:51|Input a_h is unused.
+@N: CL201 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":16:1:16:9|Trying to extract state machine for register state.
 Extracted state machine for register state
-State machine has 3 reachable states with original encodings of:
+State machine has 4 reachable states with original encodings of:
+   00000000000000000000000000000000
    00000000000000000000000000000001
    00000000000000000000000000000010
    00000000000000000000000000000011
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Optimizing register bit count[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv":14:2:14:10|Pruning register bits 31 to 19 of count[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 76MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 77MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May 21 19:04:27 2018
+# Tue Jun  5 21:31:13 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
 @N|Running in 64-bit mode
 File C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.srs changed - recompiling
-@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Selected library: work cell: game view verilog as top level
-@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Selected library: work cell: game view verilog as top level
+@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":1:7:1:12|Selected library: work cell: tennis view verilog as top level
+@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":1:7:1:12|Selected library: work cell: tennis view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May 21 19:04:27 2018
+# Tue Jun  5 21:31:14 2018
 
 ###########################################################]
 @END
@@ -83,6 +96,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May 21 19:04:27 2018
+# Tue Jun  5 21:31:14 2018
 
 ###########################################################]

@@ -2,24 +2,4 @@
 @N|Running in 64-bit mode
 @N:: Running Verilog Compiler in System Verilog mode
 @N:: Running Verilog Compiler in Multiple File Compilation Unit mode
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":1:0:1:6|Synthesizing module work_C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv_unit in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":2:7:2:20|Synthesizing module game_fsm_state in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":1:7:1:23|Synthesizing module paddle_controller in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:7:52:24|Synthesizing module collision_detector in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":24:7:24:21|Synthesizing module ball_controller in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":60:7:60:21|Synthesizing module game_controller in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Synthesizing module game in library work.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":25:20:25:24|Input reset is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":26:20:26:28|Input collision is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:44:52:46|Input a_w is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:54:52:56|Input a_x is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":53:26:53:28|Input b_w is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":53:36:53:38|Input b_x is unused.
-@N: CL189 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Register bit dx[0] is always 0.
-@N: CL189 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Register bit dx[1] is always 1.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":2:23:2:27|Input reset is unused.
-@N: CL201 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":9:1:9:9|Trying to extract state machine for register state.
-@N|Running in 64-bit mode
-@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Selected library: work cell: game view verilog as top level
-@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Selected library: work cell: game view verilog as top level
 

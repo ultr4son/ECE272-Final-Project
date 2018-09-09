@@ -3,13 +3,31 @@
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
         <Options/>
-        <Source name="vga_driver.sv" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
         <Source name="../../../../../../Users/Tristan Thompson/Documents/section4code/Clock_Counter.sv" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="PhysicsController.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Game_FSM.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../../../Users/Tristan Thompson/Downloads/hvsync_generator/hvsync_generator.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Game.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Top.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Renderer.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="finalproject.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
     </Implementation>

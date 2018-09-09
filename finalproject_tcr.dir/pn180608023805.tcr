@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/8/2018 02:36:41
+#Project Location: C:/lscc/diamond/3.10_x64/bin/nt64/finalproject; Project name: finalproject
+prj_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/finalproject.ldf"
+prj_project close
+#Stop recording: 6/8/2018 02:38:05

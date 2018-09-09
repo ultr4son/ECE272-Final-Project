@@ -17,74 +17,21 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 @I::"C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv" (library work)
 @I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv" (library work)
 @I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv" (library work)
+@E: CS187 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":22:34:22:34|Expecting )
+@E: CS187 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":40:0:40:8|Expecting endmodule
+@I::"C:\Users\Tristan Thompson\Downloads\hvsync_generator\hvsync_generator.sv" (library work)
 @I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv" (library work)
-Error reading file dependency information in file C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.fdepVerilog syntax check successful!
-Options changed - recompiling
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":1:0:1:6|Synthesizing module work_C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv_unit in library work.
-Selecting top level module game
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":2:7:2:20|Synthesizing module game_fsm_state in library work.
-@W: CG532 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":8:1:8:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":1:7:1:23|Synthesizing module paddle_controller in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:7:52:24|Synthesizing module collision_detector in library work.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":24:7:24:21|Synthesizing module ball_controller in library work.
-@W: CL169 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":31:1:31:9|Pruning unused register dx[9:0]. Make sure that there are no unused intermediate registers.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":60:7:60:21|Synthesizing module game_controller in library work.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":81:7:81:14|Port-width mismatch for port a_x. The port definition is 10 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":82:7:82:14|Port-width mismatch for port a_y. The port definition is 10 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":92:8:92:10|Port-width mismatch for port ddy. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@N: CG364 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Synthesizing module game in library work.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":20:15:20:22|Port-width mismatch for port p1_paddle_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":21:15:21:22|Port-width mismatch for port p1_paddle_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":22:10:22:15|Port-width mismatch for port ball_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":23:10:23:15|Port-width mismatch for port ball_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-Error reading file dependency information in file C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.fdep@W: CL156 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":81:7:81:14|*Input un1_paddle_x[9:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":82:7:82:14|*Input un1_paddle_y[9:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":25:20:25:24|Input reset is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":26:20:26:28|Input collision is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:44:52:46|Input a_w is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":52:54:52:56|Input a_x is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":53:26:53:28|Input b_w is unused.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":53:36:53:38|Input b_x is unused.
-@N: CL189 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Register bit dx[0] is always 0.
-@N: CL189 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Register bit dx[1] is always 1.
-@W: CL279 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":11:1:11:9|Pruning register bits 1 to 0 of dx[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL159 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv":2:23:2:27|Input reset is unused.
-@N: CL201 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv":9:1:9:9|Trying to extract state machine for register state.
-Extracted state machine for register state
-State machine has 3 reachable states with original encodings of:
-   00000000000000000000000000000001
-   00000000000000000000000000000010
-   00000000000000000000000000000011
-
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 76MB)
-
+@I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv" (library work)
+@W: CG1337 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":16:8:16:20|Net normal_ball_y is not declared.
+@W: CG1337 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv":17:8:17:22|Net normal_paddle_y is not declared.
+@I::"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Renderer.sv" (library work)
+Error reading file dependency information in file C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.fdep2 syntax errors
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-
-Process completed successfully.
-# Mon May 21 18:54:26 2018
-
-###########################################################]
-Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
-@N|Running in 64-bit mode
-File C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synwork\layer0.srs changed - recompiling
-@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Selected library: work cell: game view verilog as top level
-@N: NF107 :"C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv":1:7:1:10|Selected library: work cell: game view verilog as top level
-
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
-
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-
-Process completed successfully.
-# Mon May 21 18:54:26 2018
+# Tue Jun  5 20:39:25 2018
 
 ###########################################################]
 @END
-
-At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
-
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-
-Process completed successfully.
-# Mon May 21 18:54:26 2018
+# Tue Jun  5 20:39:25 2018
 
 ###########################################################]

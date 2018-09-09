@@ -10,32 +10,32 @@ The file contains the job information from compiler to be displayed as part of t
     <title>Synopsys HDL Compiler</title>
   </report_link> 
   <job_status>
-    <data>Completed    </data>
+    <data>Failed    </data>
   </job_status>
 <job_info> 
 			<info name="Notes">
-  <data>24</data>
+  <data>4</data>
   <report_link name="more"><data>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synlog\report\impl1_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
-  <data>11</data>
+  <data>2</data>
   <report_link name="more"><data>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synlog\report\impl1_compiler_warnings.txt</data></report_link>
   </info>
 			<info name="Errors">
-  <data>0</data>
+  <data>2</data>
   <report_link name="more"><data>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\synlog\report\impl1_compiler_errors.txt</data></report_link>
   </info>
 			<info name="CPU Time">
   <data>-</data>
   </info>
 			<info name="Real Time">
-  <data>00h:00m:01s</data>
+  <data>00h:00m:00s</data>
   </info>
 			<info name="Peak Memory">
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1526954066</data>
+  <data type="timestamp">1528256365</data>
   </info>
 			</job_info>
 </job_run_status>

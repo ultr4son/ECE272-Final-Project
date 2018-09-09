@@ -1,0 +1,59 @@
+#Start recording tcl command: 6/1/2018 17:00:24
+#Project Location: C:/lscc/diamond/3.10_x64/bin/nt64/finalproject; Project name: finalproject
+C:/lscc/diamond/3.10_x64/bin/nt64/hsynctest_1
+hsynctest_1
+#Start recording tcl command: 6/3/2018 16:52:45
+#Project Location: C:/lscc/diamond/3.10_x64/bin/nt64/hsynctest_1; Project name: hsynctest_1
+prj_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/finalproject.ldf"
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+pgr_program run
+pgr_program set -port FTUSB-0
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project close
+pgr_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+pgr_program run
+pgr_program set -port FTUSB-0
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+launch_synplify_prj impl1
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+launch_synplify_prj impl1
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+pgr_project save "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project close
+pgr_project open "C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/impl1/impl1.xcf"
+pgr_program run
+prj_project close
+prj_project open "C:/lscc/diamond/3.10_x64/bin/nt64/hsynctest_1/hsynctest_1.ldf"
+#Stop recording: 6/3/2018 16:52:45

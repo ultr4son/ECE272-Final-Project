@@ -47,7 +47,10 @@ set_option -include_path {C:/lscc/diamond/3.10_x64/bin/nt64/finalproject}
 add_file -verilog {C:/Users/Tristan Thompson/Documents/section4code/Clock_Counter.sv}
 add_file -verilog {C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/PhysicsController.sv}
 add_file -verilog {C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/Game_FSM.sv}
+add_file -verilog {C:/Users/Tristan Thompson/Downloads/hvsync_generator/hvsync_generator.sv}
 add_file -verilog {C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/Game.sv}
+add_file -verilog {C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/Top.sv}
+add_file -verilog {C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/Renderer.sv}
 
 
 #-- set result format/file last

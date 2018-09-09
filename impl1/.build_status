@@ -6,23 +6,23 @@
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="0" update_result="2" update_time="1526953850"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1528259493"/>
             <Task name="Jedec4Xo3l" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen4Xo3l" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="0" build_time="1526953829">
-            <Task name="Map" build_result="0" update_result="2" update_time="1526953829"/>
+        <Milestone name="Map" build_result="2" build_time="1528259482">
+            <Task name="Map" build_result="2" update_result="0" update_time="1528259482"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="0" build_time="1526953846">
-            <Task name="PAR" build_result="0" update_result="2" update_time="1526953846"/>
+        <Milestone name="PAR" build_result="2" build_time="1528259490">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1528259490"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1526954674">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1526954674"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1528259480">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1528259480"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="2" update_time="0"/>
@@ -31,14 +31,14 @@
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Translate" build_result="0" build_time="1526953825">
-            <Task name="Translate" build_result="0" update_result="2" update_time="1526953825"/>
+        <Milestone name="Translate" build_result="2" build_time="1528259481">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1528259481"/>
         </Milestone>
-        <Report name="finalproject_impl1.bgn" last_build_time="1526953850" last_build_size="4422"/>
-        <Report name="finalproject_impl1.edi" last_build_time="1526954671" last_build_size="70064"/>
-        <Report name="finalproject_impl1.jed" last_build_time="1526953850" last_build_size="1465884"/>
-        <Report name="finalproject_impl1.ncd" last_build_time="1526953846" last_build_size="57087"/>
-        <Report name="finalproject_impl1.ngd" last_build_time="1526953825" last_build_size="54388"/>
-        <Report name="finalproject_impl1_map.ncd" last_build_time="1526953829" last_build_size="46702"/>
+        <Report name="finalproject_impl1.bgn" last_build_time="1528259493" last_build_size="4424"/>
+        <Report name="finalproject_impl1.edi" last_build_time="1528259478" last_build_size="301388"/>
+        <Report name="finalproject_impl1.jed" last_build_time="1528259493" last_build_size="1464702"/>
+        <Report name="finalproject_impl1.ncd" last_build_time="1528259490" last_build_size="293985"/>
+        <Report name="finalproject_impl1.ngd" last_build_time="1528259481" last_build_size="258549"/>
+        <Report name="finalproject_impl1_map.ncd" last_build_time="1528259482" last_build_size="210351"/>
     </Strategy>
 </BuildStatus>

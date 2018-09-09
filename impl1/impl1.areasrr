@@ -1,70 +1,173 @@
 ----------------------------------------------------------------------
-Report for cell game.verilog
+Report for cell tennis.verilog
 
-Register bits: 44 of 54912 (0%)
+Register bits: 95 of 54912 (0%)
 PIC Latch:       0
-I/O cells:       43
+I/O cells:       9
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       10       100.0
-                            FD1S3AX       41       100.0
-                            FD1S3IX        2       100.0
+                              CCU2D      124       100.0
+                            FD1P3AX       12       100.0
+                            FD1P3BX       12       100.0
+                            FD1P3DX       34       100.0
+                            FD1S3AX       11       100.0
+                            FD1S3DX       21       100.0
                                 GSR        1       100.0
-                                 IB        3       100.0
-                           IFS1P3JX        1       100.0
-                                INV        4       100.0
-                                 OB       40       100.0
-                           ORCALUT4       38       100.0
+                                 IB        4       100.0
+                                INV        6       100.0
+                                 OB        5       100.0
+                           OFS1P3DX        1       100.0
+                           OFS1P3IX        1       100.0
+                           OFS1P3JX        3       100.0
+                           ORCALUT4       59       100.0
+                               OSCH        1       100.0
                                 PUR        1       100.0
-                                VHI        4       100.0
-                                VLO        4       100.0
+                                VHI       10       100.0
+                                VLO       10       100.0
 SUB MODULES 
                     ball_controller        1       100.0
+                      clock_counter        1       100.0
+                 collision_detector        1       100.0
+                               game        1       100.0
                     game_controller        1       100.0
+                     game_fsm_state        1       100.0
+                   hvsync_generator        1       100.0
+                  paddle_controller        1       100.0
+                           renderer        1       100.0
+                            
+                         TOTAL           325           
+----------------------------------------------------------------------
+Report for cell renderer.netlist
+     Instance path:  render
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       62        50.0
+                            FD1P3AX        9        75.0
+                            FD1S3AX       11       100.0
+                                INV        2        33.3
+                           ORCALUT4       23        39.0
+                                VHI        2        20.0
+                                VLO        2        20.0
+SUB MODULES 
+                   hvsync_generator        1       100.0
+                            
+                         TOTAL           112           
+----------------------------------------------------------------------
+Report for cell hvsync_generator.netlist
+     Instance path:  render.syncgen
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       11         8.9
+                            FD1P3AX        9        75.0
+                            FD1S3AX       11       100.0
+                                INV        2        33.3
+                           ORCALUT4       13        22.0
+                                VHI        1        10.0
+                                VLO        1        10.0
+                            
+                         TOTAL            48           
+----------------------------------------------------------------------
+Report for cell game.netlist
+     Instance path:  gamelogic
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       52        41.9
+                            FD1P3AX        3        25.0
+                            FD1P3BX       12       100.0
+                            FD1P3DX       34       100.0
+                            FD1S3DX        1         4.8
+                                INV        2        33.3
+                           ORCALUT4       17        28.8
+                                VHI        6        60.0
+                                VLO        6        60.0
+SUB MODULES 
+                    ball_controller        1       100.0
+                 collision_detector        1       100.0
+                    game_controller        1       100.0
+                     game_fsm_state        1       100.0
                   paddle_controller        1       100.0
                             
-                         TOTAL           152           
+                         TOTAL           138           
 ----------------------------------------------------------------------
 Report for cell game_controller.netlist
-     Instance path:  game
+     Instance path:  gamelogic.game
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       10       100.0
-                            FD1S3AX       41       100.0
-                            FD1S3IX        2       100.0
-                                INV        4       100.0
-                           ORCALUT4       38       100.0
-                                VHI        3        75.0
-                                VLO        3        75.0
+                              CCU2D       52        41.9
+                            FD1P3BX       12       100.0
+                            FD1P3DX       32        94.1
+                            FD1S3DX        1         4.8
+                                INV        2        33.3
+                           ORCALUT4        8        13.6
+                                VHI        4        40.0
+                                VLO        4        40.0
 SUB MODULES 
                     ball_controller        1       100.0
+                 collision_detector        1       100.0
                   paddle_controller        1       100.0
                             
-                         TOTAL           103           
+                         TOTAL           118           
 ----------------------------------------------------------------------
 Report for cell ball_controller.netlist
-     Instance path:  game.ball
+     Instance path:  gamelogic.game.ball
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D        5        50.0
-                            FD1S3AX       32        78.0
-                                INV        3        75.0
-                           ORCALUT4       35        92.1
-                                VHI        1        25.0
-                                VLO        1        25.0
+                              CCU2D       20        16.1
+                            FD1P3BX        9        75.0
+                            FD1P3DX       26        76.5
+                            FD1S3DX        1         4.8
+                                INV        2        33.3
+                           ORCALUT4        3         5.1
+                                VHI        1        10.0
+                                VLO        1        10.0
                             
-                         TOTAL            77           
+                         TOTAL            63           
+----------------------------------------------------------------------
+Report for cell collision_detector.netlist
+     Instance path:  gamelogic.game.cdetect
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       27        21.8
+                           ORCALUT4        4         6.8
+                                VHI        1        10.0
+                                VLO        1        10.0
+                            
+                         TOTAL            33           
 ----------------------------------------------------------------------
 Report for cell paddle_controller.netlist
-     Instance path:  game.player1
+     Instance path:  gamelogic.game.player1
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D        5        50.0
-                            FD1S3AX        9        22.0
-                            FD1S3IX        2       100.0
-                                INV        1        25.0
-                           ORCALUT4        3         7.9
-                                VHI        1        25.0
-                                VLO        1        25.0
+                              CCU2D        5         4.0
+                            FD1P3BX        3        25.0
+                            FD1P3DX        6        17.6
+                           ORCALUT4        1         1.7
+                                VHI        1        10.0
+                                VLO        1        10.0
                             
-                         TOTAL            22           
+                         TOTAL            17           
+----------------------------------------------------------------------
+Report for cell game_fsm_state.netlist
+     Instance path:  gamelogic.fsm
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3AX        3        25.0
+                            FD1P3DX        2         5.9
+                           ORCALUT4        9        15.3
+                                VHI        1        10.0
+                                VLO        1        10.0
+                            
+                         TOTAL            16           
+----------------------------------------------------------------------
+Report for cell clock_counter.netlist
+     Instance path:  counter_1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       10         8.1
+                            FD1S3DX       20        95.2
+                                INV        1        16.7
+                           ORCALUT4       19        32.2
+                                VHI        1        10.0
+                                VLO        1        10.0
+                            
+                         TOTAL            52           

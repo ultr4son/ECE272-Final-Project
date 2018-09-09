@@ -1,23 +1,198 @@
 [ START MERGED ]
+reset_n_c_i reset_n_c
 [ END MERGED ]
 [ START CLIPPED ]
-game/ball/GND
-game/ball/un4_x_1_cry_7_0_COUT
-game/ball/un4_y_cry_1_0_S1
-game/ball/un4_y_cry_1_0_S0
-game/ball/N_2
-game/ball/un4_y_cry_8_0_COUT
-game/ball/un5_dy_cry_0_0_S0
-game/ball/N_4
-game/ball/un5_dy_cry_7_0_COUT
-game/ball/un4_x_1_cry_0_0_S1
-game/ball/un4_x_1_cry_0_0_S0
-game/ball/N_1
+GND
+counter_1/GND
+gamelogic/game/player1/GND
+gamelogic/game/cdetect/GND
+gamelogic/game/ball/GND
+render/GND
+render/syncgen/GND
+VCC
+counter_1/count_1_cry_17_0_COUT
+counter_1/count_1_cry_0_0_S1
+counter_1/count_1_cry_0_0_S0
+counter_1/N_1
+gamelogic/game/player1/un1_x_cry_0_0_S1
+gamelogic/game/player1/un1_x_cry_0_0_S0
+gamelogic/game/player1/N_1
+gamelogic/game/player1/un1_x_s_9_0_S1
+gamelogic/game/player1/un1_x_s_9_0_COUT
+gamelogic/game/cdetect/collision_y_cry_1_0_S1
+gamelogic/game/cdetect/collision_y_cry_1_0_S0
+gamelogic/game/cdetect/N_1
+gamelogic/game/cdetect/collision_y_cry_8_0_COUT
+gamelogic/game/cdetect/ball_x_i[1]
+gamelogic/game/cdetect/un2_collision_x_cry_1_0_S0
+gamelogic/game/cdetect/N_2
+gamelogic/game/cdetect/un2_collision_x_cry_8_0_COUT
+gamelogic/game/cdetect/p1_paddle_x_i[1]
+gamelogic/game/cdetect/un6_collision_x_cry_1_0_S0
+gamelogic/game/cdetect/N_3
+gamelogic/game/cdetect/un6_collision_x_cry_8_0_COUT
+gamelogic/game/cdetect/un8_collision_x_cry_0_0_S1
+gamelogic/game/cdetect/un8_collision_x_cry_0_0_S0
+gamelogic/game/cdetect/N_4
+gamelogic/game/cdetect/un8_collision_x_cry_1_0_S1
+gamelogic/game/cdetect/un8_collision_x_cry_1_0_S0
+gamelogic/game/cdetect/un8_collision_x_cry_3_0_S1
+gamelogic/game/cdetect/un8_collision_x_cry_3_0_S0
+gamelogic/game/cdetect/un8_collision_x_cry_5_0_S1
+gamelogic/game/cdetect/un8_collision_x_cry_5_0_S0
+gamelogic/game/cdetect/un8_collision_x_cry_7_0_S1
+gamelogic/game/cdetect/un8_collision_x_cry_7_0_S0
+gamelogic/game/cdetect/un8_collision_x_cry_9_0_S0
+gamelogic/game/cdetect/un8_collision_x_cry_9_0_COUT
+gamelogic/game/cdetect/un4_collision_x_cry_0_0_S1
+gamelogic/game/cdetect/un4_collision_x_cry_0_0_S0
+gamelogic/game/cdetect/N_5
+gamelogic/game/cdetect/un4_collision_x_cry_1_0_S1
+gamelogic/game/cdetect/un4_collision_x_cry_1_0_S0
+gamelogic/game/cdetect/un4_collision_x_cry_3_0_S1
+gamelogic/game/cdetect/un4_collision_x_cry_3_0_S0
+gamelogic/game/cdetect/un4_collision_x_cry_5_0_S1
+gamelogic/game/cdetect/un4_collision_x_cry_5_0_S0
+gamelogic/game/cdetect/un4_collision_x_cry_7_0_S1
+gamelogic/game/cdetect/un4_collision_x_cry_7_0_S0
+gamelogic/game/cdetect/un4_collision_x_cry_9_0_S0
+gamelogic/game/cdetect/un4_collision_x_cry_9_0_COUT
+gamelogic/game/ball/un4_y_cry_0_0_S1
+gamelogic/game/ball/un4_y_cry_0_0_S0
+gamelogic/game/ball/N_1
+gamelogic/game/ball/un4_y_s_9_0_S1
+gamelogic/game/ball/un4_y_s_9_0_COUT
+gamelogic/game/ball/un1_ddy_1_cry_0_0_S1
+gamelogic/game/ball/un1_ddy_1_cry_0_0_S0
+gamelogic/game/ball/N_2
+gamelogic/game/ball/un1_ddy_1_s_9_0_S1
+gamelogic/game/ball/un1_ddy_1_s_9_0_COUT
+gamelogic/game/ball/dx_2_1_cry_0_0_S1
+gamelogic/game/ball/dx_2_1_cry_0_0_S0
+gamelogic/game/ball/N_3
+gamelogic/game/ball/dx_2_1_s_9_0_S1
+gamelogic/game/ball/dx_2_1_s_9_0_COUT
+gamelogic/game/ball/un4_x_cry_0_0_S1
+gamelogic/game/ball/un4_x_cry_0_0_S0
+gamelogic/game/ball/N_4
+gamelogic/game/ball/un4_x_s_9_0_S1
+gamelogic/game/ball/un4_x_s_9_0_COUT
+render/un1_ball_y_cry_0_0_S1
+render/un1_ball_y_cry_0_0_S0
+render/N_1
+render/un1_ball_y_cry_7_0_COUT
+render/un1_ball_x_cry_0_0_S1
+render/un1_ball_x_cry_0_0_S0
+render/N_2
+render/un1_ball_x_cry_7_0_COUT
+render/un1_p1_paddle_x_cry_0_0_S1
+render/un1_p1_paddle_x_cry_0_0_S0
+render/N_3
+render/un1_p1_paddle_x_cry_7_0_COUT
+render/un1_CounterX_1_cry_0_0_S1
+render/un1_CounterX_1_cry_0_0_S0
+render/N_4
+render/un1_CounterX_1_cry_1_0_S1
+render/un1_CounterX_1_cry_1_0_S0
+render/un1_CounterX_1_cry_3_0_S1
+render/un1_CounterX_1_cry_3_0_S0
+render/un1_CounterX_1_cry_5_0_S1
+render/un1_CounterX_1_cry_5_0_S0
+render/un1_CounterX_1_cry_7_0_S1
+render/un1_CounterX_1_cry_7_0_S0
+render/un1_CounterX_1_cry_9_0_S0
+render/un1_CounterX_1_cry_9_0_COUT
+render/un1_CounterX_cry_0_0_S1
+render/un1_CounterX_cry_0_0_S0
+render/N_5
+render/un1_CounterX_cry_1_0_S1
+render/un1_CounterX_cry_1_0_S0
+render/un1_CounterX_cry_3_0_S1
+render/un1_CounterX_cry_3_0_S0
+render/un1_CounterX_cry_5_0_S1
+render/un1_CounterX_cry_5_0_S0
+render/un1_CounterX_cry_7_0_S1
+render/un1_CounterX_cry_7_0_S0
+render/un1_CounterX_cry_9_0_S0
+render/un1_CounterX_cry_9_0_COUT
+render/un1_CounterY_cry_0_0_S1
+render/un1_CounterY_cry_0_0_S0
+render/N_6
+render/un1_CounterY_cry_1_0_S1
+render/un1_CounterY_cry_1_0_S0
+render/un1_CounterY_cry_3_0_S1
+render/un1_CounterY_cry_3_0_S0
+render/un1_CounterY_cry_5_0_S1
+render/un1_CounterY_cry_5_0_S0
+render/un1_CounterY_cry_7_0_S1
+render/un1_CounterY_cry_7_0_S0
+render/un1_CounterY_cry_8_0_S1
+render/un1_CounterY_cry_8_0_COUT
+render/un1_p1_paddle_x_1_cry_0_0_S1
+render/un1_p1_paddle_x_1_cry_0_0_S0
+render/N_7
+render/un1_p1_paddle_x_1_cry_1_0_S1
+render/un1_p1_paddle_x_1_cry_1_0_S0
+render/un1_p1_paddle_x_1_cry_3_0_S1
+render/un1_p1_paddle_x_1_cry_3_0_S0
+render/un1_p1_paddle_x_1_cry_5_0_S1
+render/un1_p1_paddle_x_1_cry_5_0_S0
+render/un1_p1_paddle_x_1_cry_7_0_S1
+render/un1_p1_paddle_x_1_cry_7_0_S0
+render/un1_p1_paddle_x_1_cry_9_0_S0
+render/un1_p1_paddle_x_1_cry_9_0_COUT
+render/un1_ball_y_1_cry_0_0_S1
+render/un1_ball_y_1_cry_0_0_S0
+render/N_8
+render/un1_ball_y_1_cry_1_0_S1
+render/un1_ball_y_1_cry_1_0_S0
+render/un1_ball_y_1_cry_3_0_S1
+render/un1_ball_y_1_cry_3_0_S0
+render/un1_ball_y_1_cry_5_0_S1
+render/un1_ball_y_1_cry_5_0_S0
+render/un1_ball_y_1_cry_7_0_S1
+render/un1_ball_y_1_cry_7_0_S0
+render/un1_ball_y_1_cry_9_0_S0
+render/un1_ball_y_1_cry_9_0_COUT
+render/un1_ball_x_1_cry_0_0_S1
+render/un1_ball_x_1_cry_0_0_S0
+render/N_9
+render/un1_ball_x_1_cry_1_0_S1
+render/un1_ball_x_1_cry_1_0_S0
+render/un1_ball_x_1_cry_3_0_S1
+render/un1_ball_x_1_cry_3_0_S0
+render/un1_ball_x_1_cry_5_0_S1
+render/un1_ball_x_1_cry_5_0_S0
+render/un1_ball_x_1_cry_7_0_S1
+render/un1_ball_x_1_cry_7_0_S0
+render/un1_ball_x_1_cry_9_0_S0
+render/un1_ball_x_1_cry_9_0_COUT
+render/syncgen/CounterY_cry_0_S0[0]
+render/syncgen/N_1
+render/syncgen/CounterY_cry_0_COUT[7]
+render/syncgen/un3_CounterX_cry_0_0_S1
+render/syncgen/un3_CounterX_cry_0_0_S0
+render/syncgen/N_2
+render/syncgen/un3_CounterX_s_9_0_S1
+render/syncgen/un3_CounterX_s_9_0_COUT
+osc_int_SEDSTDBY
 [ END CLIPPED ]
+[ START OSC ]
+clk_0 24.18
+[ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Mon May 21 18:50:29 2018
+# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Tue Jun 05 21:31:21 2018
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE DUALBOOTGOLDEN=INTERNAL BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "vga_h_sync" SITE "C1" ;
+LOCATE COMP "p1_move_right" SITE "B5" ;
+LOCATE COMP "vga_b" SITE "F5" ;
+LOCATE COMP "vga_g" SITE "E3" ;
+LOCATE COMP "vga_r" SITE "B1" ;
+LOCATE COMP "vga_v_sync" SITE "D2" ;
+LOCATE COMP "start" SITE "B6" ;
+LOCATE COMP "p1_move_left" SITE "B4" ;
+FREQUENCY NET "clk_0" 24.180000 MHz ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

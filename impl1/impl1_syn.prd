@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version M-2017.03L-SP1-1
+#--  Project file C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\impl1\impl1_syn.prd
+#--  Written on Wed Jun  6 13:16:19 2018
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

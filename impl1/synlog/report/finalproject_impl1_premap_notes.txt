@@ -1,6 +1,3 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: BN115 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv":78:20:78:26|Removing instance cdetect (in view: work.game_controller(verilog)) of type view:work.collision_detector(verilog) because it does not drive other instances.
-@N: BN115 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\game.sv":12:16:12:18|Removing instance fsm (in view: work.game(verilog)) of type view:work.game_fsm_state(verilog) because it does not drive other instances.
-@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\game_fsm.sv":17:1:17:9|Removing sequential instance reset (in view: work.game_fsm_state(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\game_fsm.sv":9:1:9:9|Removing sequential instance state[2:0] (in view: work.game_fsm_state(verilog)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: MO225 :"c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\game_fsm.sv":16:1:16:9|There are no possible illegal states for state machine state[3:0] (in view: work.game_fsm_state(verilog)); safe FSM implementation is not required.

@@ -1,11 +1,17 @@
-@P:  Worst Slack : 995.265
-@P:  game|clk - Estimated Frequency : 211.2 MHz
-@P:  game|clk - Requested Frequency : 1.0 MHz
-@P:  game|clk - Estimated Period : 4.735
-@P:  game|clk - Requested Period : 1000.000
-@P:  game|clk - Slack : 995.265
-@P:  Total Area : 6.0
+@P:  Worst Slack : 30.297
+@P:  tennis|clk_inferred_clock - Estimated Frequency : 90.4 MHz
+@P:  tennis|clk_inferred_clock - Requested Frequency : 24.2 MHz
+@P:  tennis|clk_inferred_clock - Estimated Period : 11.059
+@P:  tennis|clk_inferred_clock - Requested Period : 41.356
+@P:  tennis|clk_inferred_clock - Slack : 30.297
+@P:  Total Area : 86.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:01s
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:02s

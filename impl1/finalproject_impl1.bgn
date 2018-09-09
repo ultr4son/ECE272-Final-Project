@@ -8,7 +8,7 @@ Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 Command: bitgen -g RamCfg:Reset -path C:/lscc/diamond/3.10_x64/bin/nt64/finalproject -w -jedec -gui -msgset C:/lscc/diamond/3.10_x64/bin/nt64/finalproject/promote.xml finalproject_impl1.ncd finalproject_impl1.prf 
 
 Loading design for application Bitgen from file finalproject_impl1.ncd.
-Design name: game
+Design name: tennis
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LCMXO3LF-6900C

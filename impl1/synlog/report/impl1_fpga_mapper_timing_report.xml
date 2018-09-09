@@ -15,9 +15,9 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data tcl_name="slack">Slack</data>
 </row>
 <row>
-<data>game|clk</data>
-<data>248.4 MHz</data>
-<data>211.2 MHz</data>
-<data>-0.710</data>
+<data>tennis|clk_inferred_clock</data>
+<data>24.2 MHz</data>
+<data>92.6 MHz</data>
+<data>30.557</data>
 </row>
 </report_table>

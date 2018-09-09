@@ -2,22 +2,72 @@
 <BaliMessageLog>
     <Task name="Map">
         <Message>
-            <ID>51001046</ID>
+            <ID>51001030</ID>
             <Severity>Warning</Severity>
-            <Dynamic>p1_move_left</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>p1_move_right</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>start</Dynamic>
+            <Dynamic>gamelogic/reset</Dynamic>
         </Message>
     </Task>
     <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>GAMEOVER_Y</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>paddle_w</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>paddle_h</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ball_w</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ball_h</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PADDLE_B</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PADDLE_G</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PADDLE_R</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BALL_B</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BALL_G</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BALL_R</Dynamic>
+        </Message>
         <Message>
             <ID>1121028</ID>
             <Severity>Warning</Severity>
@@ -39,30 +89,21 @@
             <Dynamic>PADDLE_W</Dynamic>
         </Message>
         <Message>
-            <ID>1166052</ID>
+            <ID>1121028</ID>
             <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>p1_move_left</Dynamic>
-            <Navigation>p1_move_left</Navigation>
+            <Dynamic>count_max</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>p1_move_right</Dynamic>
-            <Navigation>p1_move_right</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>start</Dynamic>
-            <Navigation>start</Navigation>
+            <Dynamic>osc_int_SEDSTDBY</Dynamic>
+            <Navigation>osc_int_SEDSTDBY</Navigation>
         </Message>
         <Message>
             <ID>1163101</ID>
             <Severity>Warning</Severity>
-            <Dynamic>3</Dynamic>
+            <Dynamic>1</Dynamic>
         </Message>
     </Task>
     <Task name="Synplify_Synthesis">
@@ -73,225 +114,285 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG532 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv&quot;:8:1:8:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.</Dynamic>
-            <Navigation>CG532</Navigation>
-            <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game_FSM.sv</Navigation>
-            <Navigation>8</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>8</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL169 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv&quot;:31:1:31:9|Pruning unused register dx[9:0]. Make sure that there are no unused intermediate registers.</Dynamic>
-            <Navigation>CL169</Navigation>
-            <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv</Navigation>
-            <Navigation>31</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>31</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Pruning unused register dx[9:0]. Make sure that there are no unused intermediate registers.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv&quot;:81:7:81:14|Port-width mismatch for port a_x. The port definition is 10 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
-            <Navigation>CS263</Navigation>
-            <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv</Navigation>
-            <Navigation>81</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>81</Navigation>
-            <Navigation>14</Navigation>
-            <Navigation>Port-width mismatch for port a_x. The port definition is 10 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv&quot;:82:7:82:14|Port-width mismatch for port a_y. The port definition is 10 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
-            <Navigation>CS263</Navigation>
-            <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv</Navigation>
-            <Navigation>82</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>82</Navigation>
-            <Navigation>14</Navigation>
-            <Navigation>Port-width mismatch for port a_y. The port definition is 10 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv&quot;:92:8:92:10|Port-width mismatch for port ddy. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
-            <Navigation>CS263</Navigation>
-            <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv</Navigation>
-            <Navigation>92</Navigation>
-            <Navigation>8</Navigation>
-            <Navigation>92</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>Port-width mismatch for port ddy. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv&quot;:20:15:20:22|Port-width mismatch for port p1_paddle_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv&quot;:25:15:25:22|Port-width mismatch for port p1_paddle_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv</Navigation>
-            <Navigation>20</Navigation>
+            <Navigation>25</Navigation>
             <Navigation>15</Navigation>
-            <Navigation>20</Navigation>
+            <Navigation>25</Navigation>
             <Navigation>22</Navigation>
             <Navigation>Port-width mismatch for port p1_paddle_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv&quot;:21:15:21:22|Port-width mismatch for port p1_paddle_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv&quot;:26:15:26:22|Port-width mismatch for port p1_paddle_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv</Navigation>
-            <Navigation>21</Navigation>
+            <Navigation>26</Navigation>
             <Navigation>15</Navigation>
-            <Navigation>21</Navigation>
+            <Navigation>26</Navigation>
             <Navigation>22</Navigation>
             <Navigation>Port-width mismatch for port p1_paddle_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv&quot;:22:10:22:15|Port-width mismatch for port ball_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv&quot;:27:10:27:15|Port-width mismatch for port ball_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv</Navigation>
-            <Navigation>22</Navigation>
+            <Navigation>27</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>22</Navigation>
+            <Navigation>27</Navigation>
             <Navigation>15</Navigation>
             <Navigation>Port-width mismatch for port ball_w. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv&quot;:23:10:23:15|Port-width mismatch for port ball_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv&quot;:28:10:28:15|Port-width mismatch for port ball_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Game.sv</Navigation>
-            <Navigation>23</Navigation>
+            <Navigation>28</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>23</Navigation>
+            <Navigation>28</Navigation>
             <Navigation>15</Navigation>
             <Navigation>Port-width mismatch for port ball_h. The port definition is 10 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv&quot;:82:7:82:14|*Input un1_paddle_y[9:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
-            <Navigation>CL156</Navigation>
-            <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv</Navigation>
-            <Navigation>82</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>82</Navigation>
+            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv&quot;:47:15:47:25|Port-width mismatch for port p1_paddle_x. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv</Navigation>
+            <Navigation>47</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>47</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>Port-width mismatch for port p1_paddle_x. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv&quot;:48:15:48:25|Port-width mismatch for port p1_paddle_y. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv</Navigation>
+            <Navigation>48</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>48</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>Port-width mismatch for port p1_paddle_y. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv&quot;:45:10:45:15|Port-width mismatch for port ball_x. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Port-width mismatch for port ball_x. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv&quot;:46:10:46:15|Port-width mismatch for port ball_y. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\Top.sv</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Port-width mismatch for port ball_y. The port definition is 9 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
             <Navigation>14</Navigation>
-            <Navigation>*Input un1_paddle_y[9:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv&quot;:11:1:11:9|Pruning register bits 1 to 0 of dx[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Optimizing register bit count[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit count[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv&quot;:14:2:14:10|Pruning register bits 31 to 19 of count[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>C:\lscc\diamond\3.10_x64\bin\nt64\finalproject\PhysicsController.sv</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Pruning register bits 1 to 0 of dx[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+            <Navigation>C:\Users\Tristan Thompson\Documents\section4code\Clock_Counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Pruning register bits 31 to 19 of count[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv&quot;:11:1:11:9|Found inferred clock game|clk which controls 48 sequential elements including game.player1.x[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\tristan thompson\documents\section4code\clock_counter.sv&quot;:14:2:14:10|Found inferred clock tennis|clk_inferred_clock which controls 45 sequential elements including counter_1.count[18:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
-            <Navigation>c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Found inferred clock game|clk which controls 48 sequential elements including game.player1.x[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv&quot;:11:1:11:9|Removing instance game.player1.dx[9] because it is equivalent to instance game.player1.dx[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Removing instance game.player1.dx[9] because it is equivalent to instance game.player1.dx[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv&quot;:11:1:11:9|Removing instance game.player1.dx[8] because it is equivalent to instance game.player1.dx[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Removing instance game.player1.dx[8] because it is equivalent to instance game.player1.dx[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv&quot;:11:1:11:9|Removing instance game.player1.dx[7] because it is equivalent to instance game.player1.dx[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Removing instance game.player1.dx[7] because it is equivalent to instance game.player1.dx[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv&quot;:11:1:11:9|Removing instance game.player1.dx[6] because it is equivalent to instance game.player1.dx[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Removing instance game.player1.dx[6] because it is equivalent to instance game.player1.dx[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv&quot;:11:1:11:9|Removing instance game.player1.dx[5] because it is equivalent to instance game.player1.dx[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Removing instance game.player1.dx[5] because it is equivalent to instance game.player1.dx[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv&quot;:11:1:11:9|Removing instance game.player1.dx[4] because it is equivalent to instance game.player1.dx[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\lscc\diamond\3.10_x64\bin\nt64\finalproject\physicscontroller.sv</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Removing instance game.player1.dx[4] because it is equivalent to instance game.player1.dx[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>c:\users\tristan thompson\documents\section4code\clock_counter.sv</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Found inferred clock tennis|clk_inferred_clock which controls 45 sequential elements including counter_1.count[18:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT420 |Found inferred clock game|clk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk&quot;</Dynamic>
+            <Dynamic>MT420 |Found inferred clock tennis|clk_inferred_clock with period 41.36ns. Please declare a user-defined clock on object &quot;n:clk&quot;</Dynamic>
             <Navigation>MT420</Navigation>
-            <Navigation>Found inferred clock game|clk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk&quot;</Navigation>
+            <Navigation>Found inferred clock tennis|clk_inferred_clock with period 41.36ns. Please declare a user-defined clock on object &quot;n:clk&quot;</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

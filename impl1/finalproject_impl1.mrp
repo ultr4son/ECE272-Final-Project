@@ -1,5 +1,5 @@
 
-             Lattice Mapping Report File for Design Module 'game'
+            Lattice Mapping Report File for Design Module 'tennis'
 
 
 Design Information
@@ -15,30 +15,30 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO3LF-6900CCABGA256
 Target Performance:   5
 Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.10.0.111.2
-Mapped on:  05/21/18  18:50:27
+Mapped on:  06/05/18  21:31:21
 
 Design Summary
 --------------
 
-   Number of registers:     27 out of  7485 (0%)
-      PFU registers:           27 out of  6864 (0%)
-      PIO registers:            0 out of   621 (0%)
-   Number of SLICEs:        18 out of  3432 (1%)
-      SLICEs as Logic/ROM:     18 out of  3432 (1%)
+   Number of registers:    119 out of  7485 (2%)
+      PFU registers:          114 out of  6864 (2%)
+      PIO registers:            5 out of   621 (1%)
+   Number of SLICEs:       174 out of  3432 (5%)
+      SLICEs as Logic/ROM:    174 out of  3432 (5%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         15 out of  3432 (0%)
-   Number of LUT4s:         35 out of  6864 (1%)
-      Number used as logic LUTs:          5
+      SLICEs as Carry:        129 out of  3432 (4%)
+   Number of LUT4s:        343 out of  6864 (5%)
+      Number used as logic LUTs:         85
       Number used as distributed RAM:     0
-      Number used as ripple logic:       30
+      Number used as ripple logic:      258
       Number used as shift registers:     0
-   Number of PIO sites used: 41 + 4(JTAG) out of 207 (22%)
+   Number of PIO sites used: 9 + 4(JTAG) out of 207 (6%)
    Number of block RAMs:  0 out of 26 (0%)
-   Number of GSRs:  0 out of 1 (0%)
+   Number of GSRs:  1 out of 1 (100%)
    EFB used :       No
    JTAG used :      No
    Readback used :  No
-   Oscillator used :  No
+   Oscillator used :  Yes
    Startup used :   No
    POR :            On
    Bandgap :        On
@@ -58,48 +58,53 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net clk_c: 15 loads, 15 rising, 0 falling (Driver: PIO clk )
-   Number of Clock Enables:  0
+     Net clk_0: 73 loads, 73 rising, 0 falling (Driver: osc_int )
+   Number of Clock Enables:  4
 
                                     Page 1
 
 
 
 
-Design:  game                                          Date:  05/21/18  18:50:27
+Design:  tennis                                        Date:  06/05/18  21:31:21
 
 Design Summary (cont)
 ---------------------
-   Number of LSRs:  0
+     Net render/CounterX[7]: 5 loads, 5 LSLICEs
+     Net gamelogic/G_31: 28 loads, 28 LSLICEs
+     Net gamelogic/game/ball/collision_latch_RNINO4F1: 11 loads, 11 LSLICEs
+     Net gamelogic/game/ball/collision_latch_RNINO4F1_0: 5 loads, 5 LSLICEs
+   Number of local set/reset loads for net gamelogic/reset merged into GSR:  69
+   Number of LSRs:  4
+     Net render.syncgen.vga_HS_is_i: 1 loads, 0 LSLICEs
+     Net draw_start: 1 loads, 0 LSLICEs
+     Net render.syncgen.vga_VS_is_i: 1 loads, 0 LSLICEs
+     Net reset_n_c: 13 loads, 13 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net ball_x_c[1]: 3 loads
-     Net ball_y_c[1]: 3 loads
-     Net game/ball/dy[1]: 3 loads
-     Net ball_y_c[2]: 2 loads
-     Net ball_y_c[3]: 2 loads
-     Net ball_y_c[4]: 2 loads
-     Net ball_y_c[5]: 2 loads
-     Net ball_y_c[6]: 2 loads
-     Net game/ball/dy[9]: 2 loads
-     Net VCC: 2 loads
+     Net gamelogic/G_31: 30 loads
+     Net gamelogic/game/collision: 23 loads
+     Net gamelogic/game/ball/collision_latch: 22 loads
+     Net counter_1.count[17]: 14 loads
+     Net counter_1.count[18]: 14 loads
+     Net render/CounterX[7]: 14 loads
+     Net counter_1.un1_countlt18: 13 loads
+     Net reset_n_c: 13 loads
+     Net gamelogic/game/ball/collision_latch_RNINO4F1: 11 loads
+     Net p1_move_right_c: 11 loads
 
 
 
 
-   Number of warnings:  3
+   Number of warnings:  1
    Number of errors:    0
      
 
 Design Errors/Warnings
 ----------------------
 
-WARNING - map: IO buffer missing for top level port p1_move_left...logic will be
-     discarded.
-WARNING - map: IO buffer missing for top level port p1_move_right...logic will
-     be discarded.
-WARNING - map: IO buffer missing for top level port start...logic will be
-     discarded.
+WARNING - map: Using local reset signal 'gamelogic/reset' to infer global GSR
+     net.
 
 IO (PIO) Attributes
 -------------------
@@ -108,137 +113,440 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| ball_x[0]           | OUTPUT    | LVCMOS25  |            |
+| vga_h_sync          | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| clk                 | INPUT     | LVCMOS25  |            |
+| p1_move_right       | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| p1_paddle_y[9]      | OUTPUT    | LVCMOS25  |            |
+| vga_b               | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| p1_paddle_y[8]      | OUTPUT    | LVCMOS25  |            |
+| vga_g               | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| p1_paddle_y[7]      | OUTPUT    | LVCMOS25  |            |
+| vga_r               | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| p1_paddle_y[6]      | OUTPUT    | LVCMOS25  |            |
+| vga_v_sync          | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| p1_paddle_y[5]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| p1_paddle_y[4]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| p1_paddle_y[3]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
+| reset_n             | INPUT     | LVCMOS25  |            |
 
                                     Page 2
 
 
 
 
-Design:  game                                          Date:  05/21/18  18:50:27
+Design:  tennis                                        Date:  06/05/18  21:31:21
 
 IO (PIO) Attributes (cont)
 --------------------------
-| p1_paddle_y[2]      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| p1_paddle_y[1]      | OUTPUT    | LVCMOS25  |            |
+| start               | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| p1_paddle_y[0]      | OUTPUT    | LVCMOS25  |            |
+| p1_move_left        | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| p1_paddle_x[9]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| p1_paddle_x[8]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| p1_paddle_x[7]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| p1_paddle_x[6]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| p1_paddle_x[5]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| p1_paddle_x[4]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| p1_paddle_x[3]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| p1_paddle_x[2]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| p1_paddle_x[1]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| p1_paddle_x[0]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_y[9]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_y[8]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_y[7]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_y[6]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_y[5]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_y[4]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_y[3]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_y[2]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_y[1]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_y[0]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_x[9]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_x[8]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_x[7]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_x[6]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_x[5]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block VCC undriven or does not drive anything - clipped.
+Block gamelogic/GND undriven or does not drive anything - clipped.
+Block gamelogic/VCC undriven or does not drive anything - clipped.
+Block gamelogic/fsm/GND undriven or does not drive anything - clipped.
+Block gamelogic/fsm/VCC undriven or does not drive anything - clipped.
+Block gamelogic/game/GND undriven or does not drive anything - clipped.
+Block gamelogic/game/VCC undriven or does not drive anything - clipped.
+Block gamelogic/game/player1/VCC undriven or does not drive anything - clipped.
+Signal reset_n_c_i was merged into signal reset_n_c
+Signal GND undriven or does not drive anything - clipped.
+Signal counter_1/GND undriven or does not drive anything - clipped.
+Signal gamelogic/game/player1/GND undriven or does not drive anything - clipped.
+     
+Signal gamelogic/game/cdetect/GND undriven or does not drive anything - clipped.
+     
+Signal gamelogic/game/ball/GND undriven or does not drive anything - clipped.
+Signal render/GND undriven or does not drive anything - clipped.
+Signal render/syncgen/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal counter_1/count_1_cry_17_0_COUT undriven or does not drive anything -
+     clipped.
+Signal counter_1/count_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal counter_1/count_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal counter_1/N_1 undriven or does not drive anything - clipped.
+Signal gamelogic/game/player1/un1_x_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal gamelogic/game/player1/un1_x_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal gamelogic/game/player1/N_1 undriven or does not drive anything - clipped.
+     
+Signal gamelogic/game/player1/un1_x_s_9_0_S1 undriven or does not drive anything
+     - clipped.
+Signal gamelogic/game/player1/un1_x_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal gamelogic/game/cdetect/collision_y_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal gamelogic/game/cdetect/collision_y_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal gamelogic/game/cdetect/N_1 undriven or does not drive anything - clipped.
+     
+Signal gamelogic/game/cdetect/collision_y_cry_8_0_COUT undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/ball_x_i[1] undriven or does not drive anything -
+     clipped.
+Signal gamelogic/game/cdetect/un2_collision_x_cry_1_0_S0 undriven or does not
 
                                     Page 3
 
 
 
 
-Design:  game                                          Date:  05/21/18  18:50:27
+Design:  tennis                                        Date:  06/05/18  21:31:21
 
-IO (PIO) Attributes (cont)
---------------------------
-| ball_x[4]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_x[3]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_x[2]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ball_x[1]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-
-Removed logic
--------------
-
-Block GSR_INST undriven or does not drive anything - clipped.
-Block game/GND undriven or does not drive anything - clipped.
-Block game/VCC undriven or does not drive anything - clipped.
-Block game/ball/VCC undriven or does not drive anything - clipped.
-Signal game/ball/GND undriven or does not drive anything - clipped.
-Signal game/ball/un4_x_1_cry_7_0_COUT undriven or does not drive anything -
-     clipped.
-Signal game/ball/un4_y_cry_1_0_S1 undriven or does not drive anything - clipped.
+Removed logic (cont)
+--------------------
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/N_2 undriven or does not drive anything - clipped.
      
-Signal game/ball/un4_y_cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal gamelogic/game/cdetect/un2_collision_x_cry_8_0_COUT undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/p1_paddle_x_i[1] undriven or does not drive
+     anything - clipped.
+Signal gamelogic/game/cdetect/un6_collision_x_cry_1_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/N_3 undriven or does not drive anything - clipped.
      
-Signal game/ball/N_2 undriven or does not drive anything - clipped.
-Signal game/ball/un4_y_cry_8_0_COUT undriven or does not drive anything -
+Signal gamelogic/game/cdetect/un6_collision_x_cry_8_0_COUT undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un8_collision_x_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un8_collision_x_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/N_4 undriven or does not drive anything - clipped.
+     
+Signal gamelogic/game/cdetect/un8_collision_x_cry_1_0_S1 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un8_collision_x_cry_1_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un8_collision_x_cry_3_0_S1 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un8_collision_x_cry_3_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un8_collision_x_cry_5_0_S1 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un8_collision_x_cry_5_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un8_collision_x_cry_7_0_S1 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un8_collision_x_cry_7_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un8_collision_x_cry_9_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un8_collision_x_cry_9_0_COUT undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un4_collision_x_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un4_collision_x_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/N_5 undriven or does not drive anything - clipped.
+     
+Signal gamelogic/game/cdetect/un4_collision_x_cry_1_0_S1 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un4_collision_x_cry_1_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un4_collision_x_cry_3_0_S1 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un4_collision_x_cry_3_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un4_collision_x_cry_5_0_S1 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un4_collision_x_cry_5_0_S0 undriven or does not
+
+                                    Page 4
+
+
+
+
+Design:  tennis                                        Date:  06/05/18  21:31:21
+
+Removed logic (cont)
+--------------------
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un4_collision_x_cry_7_0_S1 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un4_collision_x_cry_7_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un4_collision_x_cry_9_0_S0 undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/cdetect/un4_collision_x_cry_9_0_COUT undriven or does not
+     drive anything - clipped.
+Signal gamelogic/game/ball/un4_y_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal gamelogic/game/ball/un4_y_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal gamelogic/game/ball/N_1 undriven or does not drive anything - clipped.
+Signal gamelogic/game/ball/un4_y_s_9_0_S1 undriven or does not drive anything -
      clipped.
-Signal game/ball/un5_dy_cry_0_0_S0 undriven or does not drive anything -
+Signal gamelogic/game/ball/un4_y_s_9_0_COUT undriven or does not drive anything
+     - clipped.
+Signal gamelogic/game/ball/un1_ddy_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal gamelogic/game/ball/un1_ddy_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal gamelogic/game/ball/N_2 undriven or does not drive anything - clipped.
+Signal gamelogic/game/ball/un1_ddy_1_s_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal gamelogic/game/ball/un1_ddy_1_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal gamelogic/game/ball/dx_2_1_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal gamelogic/game/ball/dx_2_1_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal gamelogic/game/ball/N_3 undriven or does not drive anything - clipped.
+Signal gamelogic/game/ball/dx_2_1_s_9_0_S1 undriven or does not drive anything -
      clipped.
-Signal game/ball/N_4 undriven or does not drive anything - clipped.
-Signal game/ball/un5_dy_cry_7_0_COUT undriven or does not drive anything -
+Signal gamelogic/game/ball/dx_2_1_s_9_0_COUT undriven or does not drive anything
+     - clipped.
+Signal gamelogic/game/ball/un4_x_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal gamelogic/game/ball/un4_x_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal gamelogic/game/ball/N_4 undriven or does not drive anything - clipped.
+Signal gamelogic/game/ball/un4_x_s_9_0_S1 undriven or does not drive anything -
      clipped.
-Signal game/ball/un4_x_1_cry_0_0_S1 undriven or does not drive anything -
+Signal gamelogic/game/ball/un4_x_s_9_0_COUT undriven or does not drive anything
+     - clipped.
+Signal render/un1_ball_y_cry_0_0_S1 undriven or does not drive anything -
      clipped.
-Signal game/ball/un4_x_1_cry_0_0_S0 undriven or does not drive anything -
+Signal render/un1_ball_y_cry_0_0_S0 undriven or does not drive anything -
      clipped.
-Signal game/ball/N_1 undriven or does not drive anything - clipped.
-Block game/ball/GND was optimized away.
+Signal render/N_1 undriven or does not drive anything - clipped.
+Signal render/un1_ball_y_cry_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+
+                                    Page 5
+
+
+
+
+Design:  tennis                                        Date:  06/05/18  21:31:21
+
+Removed logic (cont)
+--------------------
+Signal render/N_2 undriven or does not drive anything - clipped.
+Signal render/un1_ball_x_cry_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/N_3 undriven or does not drive anything - clipped.
+Signal render/un1_p1_paddle_x_cry_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/N_4 undriven or does not drive anything - clipped.
+Signal render/un1_CounterX_1_cry_1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_1_cry_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_1_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_1_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_1_cry_5_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_1_cry_5_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_1_cry_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_1_cry_7_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_1_cry_9_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_1_cry_9_0_COUT undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/N_5 undriven or does not drive anything - clipped.
+Signal render/un1_CounterX_cry_1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_cry_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_cry_5_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_cry_5_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_cry_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_cry_7_0_S0 undriven or does not drive anything -
+     clipped.
+
+                                    Page 6
+
+
+
+
+Design:  tennis                                        Date:  06/05/18  21:31:21
+
+Removed logic (cont)
+--------------------
+Signal render/un1_CounterX_cry_9_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterX_cry_9_0_COUT undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterY_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterY_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/N_6 undriven or does not drive anything - clipped.
+Signal render/un1_CounterY_cry_1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterY_cry_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterY_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterY_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterY_cry_5_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterY_cry_5_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterY_cry_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterY_cry_7_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterY_cry_8_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_CounterY_cry_8_0_COUT undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/N_7 undriven or does not drive anything - clipped.
+Signal render/un1_p1_paddle_x_1_cry_1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_1_cry_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_1_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_1_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_1_cry_5_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_1_cry_5_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_1_cry_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_1_cry_7_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_1_cry_9_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_p1_paddle_x_1_cry_9_0_COUT undriven or does not drive anything
+     - clipped.
+Signal render/un1_ball_y_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+
+                                    Page 7
+
+
+
+
+Design:  tennis                                        Date:  06/05/18  21:31:21
+
+Removed logic (cont)
+--------------------
+Signal render/un1_ball_y_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/N_8 undriven or does not drive anything - clipped.
+Signal render/un1_ball_y_1_cry_1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_y_1_cry_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_y_1_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_y_1_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_y_1_cry_5_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_y_1_cry_5_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_y_1_cry_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_y_1_cry_7_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_y_1_cry_9_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_y_1_cry_9_0_COUT undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/N_9 undriven or does not drive anything - clipped.
+Signal render/un1_ball_x_1_cry_1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_1_cry_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_1_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_1_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_1_cry_5_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_1_cry_5_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_1_cry_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_1_cry_7_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_1_cry_9_0_S0 undriven or does not drive anything -
+     clipped.
+Signal render/un1_ball_x_1_cry_9_0_COUT undriven or does not drive anything -
+     clipped.
+Signal render/syncgen/CounterY_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal render/syncgen/N_1 undriven or does not drive anything - clipped.
+Signal render/syncgen/CounterY_cry_0_COUT[7] undriven or does not drive anything
+     - clipped.
+Signal render/syncgen/un3_CounterX_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal render/syncgen/un3_CounterX_cry_0_0_S0 undriven or does not drive
+
+                                    Page 8
+
+
+
+
+Design:  tennis                                        Date:  06/05/18  21:31:21
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal render/syncgen/N_2 undriven or does not drive anything - clipped.
+Signal render/syncgen/un3_CounterX_s_9_0_S1 undriven or does not drive anything
+     - clipped.
+Signal render/syncgen/un3_CounterX_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal osc_int_SEDSTDBY undriven or does not drive anything - clipped.
+Block reset_n_pad_RNI49NB was optimized away.
+Block GND was optimized away.
+Block counter_1/GND was optimized away.
+Block gamelogic/game/player1/GND was optimized away.
+Block gamelogic/game/cdetect/GND was optimized away.
+Block gamelogic/game/ball/GND was optimized away.
+Block render/GND was optimized away.
+Block render/syncgen/GND was optimized away.
 
 Memory Usage
 ------------
@@ -246,12 +554,54 @@ Memory Usage
 
      
 
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                osc_int
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk_0
+  OSC Nominal Frequency (MHz):                      24.18
+
+ASIC Components
+---------------
+
+Instance Name: osc_int
+         Type: OSCH
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'gamelogic/reset' of the design has been inferred as
+        Global Set Reset (GSR). The reset signal used for GSR control is
+        'gamelogic/reset'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+
+
+
+
+                                    Page 9
+
+
+
+
+Design:  tennis                                        Date:  06/05/18  21:31:21
+
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 0 secs  
-   Total REAL Time: 2 secs  
-   Peak Memory Usage: 35 MB
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 59 MB
         
 
 
@@ -259,7 +609,53 @@ Run Time and Memory Usage
 
 
 
-                                    Page 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 10
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
